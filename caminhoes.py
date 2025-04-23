@@ -63,7 +63,7 @@ df['FATURAMENTO'] = (
 df['FATURAMENTO'] = pd.to_numeric(df['FATURAMENTO'], errors='coerce')
 
 # Estatísticas para legenda
-df_group = df.groupby('CAMINHAO').agg(
+df_group = df.groupby('MOTORISTA').agg(
     PESO_TOTAL=('PESO','sum'),
     CARGA_UTIL=('CARGA','first'),
     VALOR_TOTAL=('FATURAMENTO','sum')
@@ -73,13 +73,13 @@ faturamento_total = df_group['VALOR_TOTAL'].sum()
 
 # Cores por caminhão
 colors = ['red','blue','green','purple','orange','darkred','beige','darkblue','darkgreen','cadetblue','darkpurple','pink','lightblue','lightgreen','gray','black','lightgray']
-truck_colors = {t: colors[i%len(colors)] for i,t in enumerate(df['CAMINHAO'].unique())}
+truck_colors = {t: colors[i%len(colors)] for i,t in enumerate(df['MOTORISTA'].unique())}
 
 # Mapa base
 mapa = folium.Map(location=[df['LATITUDE CASA'].mean(), df['LONGITUDE CASA'].mean()], zoom_start=10)
 
 # Loop por caminhão
-for truck, grp in df.groupby('CAMINHAO'):
+for truck, grp in df.groupby('MOTORISTA'):
     rows = grp.to_dict('records')
     depot = (rows[0]['LATITUDE CASA'], rows[0]['LONGITUDE CASA'])
 
@@ -137,7 +137,7 @@ for truck, grp in df.groupby('CAMINHAO'):
             f"<span style='font-weight:bold;'>{idx}</span><span>{emoji}</span></div>"
         )
         icon = folium.DivIcon(html=icon_html)
-        popup = ( f"<b>Placa:</b>  {r['CAMINHAO']}<br>"
+        popup = ( f"<b>Motorista:</b>  {r['MOTORISTA']}<br>"
                     f"<b>Ordem:</b> {idx}<br><b>Cliente:</b> {r['NOME FANTASIA']}<br>"
                     f"<b>Turno:</b> {turno}<br><b>Peso:</b> {r['PESO']}<br>"
                     f"<b>Faturamento:</b> R$ {r['FATURAMENTO']}")
@@ -154,7 +154,7 @@ legend = folium.Element(
     f'<b>Clientes totais:</b> {len(df)}<br><b>Faturamento Total:</b> R$ {faturamento_total:.2f}<br>' +
     f'<b>Turnos:</b> "☀️" = Manhã , 🕒 = Diurno <br>'  +
     f'<b>Atualizado:</b> {pd.Timestamp.today().strftime("%d/%m/%Y")}<br><br>' +
-    ''.join([f"<b>{row['CAMINHAO']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>" for _,row in df_group.iterrows()]) +
+    ''.join([f"<b>{row['MOTORISTA']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>" for _,row in df_group.iterrows()]) +
     '</div>'
 )
 mapa.get_root().html.add_child(legend)
