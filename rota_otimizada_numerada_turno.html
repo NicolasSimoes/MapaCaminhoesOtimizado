@@ -1,0 +1,2695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63880d14d81890939626da470d6c9390 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position:fixed; bottom:50px; left:50px; width:300px; background:white; border:2px solid grey; z-index:9999; padding:10px; box-shadow:2px 2px 5px rgba(0,0,0,0.3)">
+    <b>🏬 Clientes totais:</b> 46<br>
+    <b>💰 Faturamento Total:</b> R$ 92159.28<br>
+    <b>🔄 Atualizado:</b> 23/04/2025<br><br>
+<b>HYQ9905</b>: R$ 23867.27 / Uso: 25%<br><b>OCB9225</b>: R$ 10038.22 / Uso: 36%<br><b>OSH4598</b>: R$ 12233.39 / Uso: 37%<br><b>PNP4654</b>: R$ 6689.06 / Uso: 30%<br><b>PNP4814</b>: R$ 3274.30 / Uso: 8%<br><b>PNQ3270</b>: R$ 8465.44 / Uso: 60%<br><b>POL9211</b>: R$ 13916.86 / Uso: 7%<br><b>RIG8G48</b>: R$ 13674.74 / Uso: 28%<br></div>
+    
+            <div class="folium-map" id="map_63880d14d81890939626da470d6c9390" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63880d14d81890939626da470d6c9390 = L.map(
+                "map_63880d14d81890939626da470d6c9390",
+                {
+                    center: [-3.8666699, -38.5773332],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_377981ab274312340571ba44f3983396 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_377981ab274312340571ba44f3983396.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_8fd6f218919ac2889c967fb5e7f0faaf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f368bf4724bc3a52a0d8bebe1138c3d3 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var icon_a0c9c1c0c217e4de977082a78697fdae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c706618659ff14dcfe5d8f37227ff95b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7ba3dee76984f4ab99e42ee15b2a303 = $(`<div id="html_b7ba3dee76984f4ab99e42ee15b2a303" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_c706618659ff14dcfe5d8f37227ff95b.setContent(html_b7ba3dee76984f4ab99e42ee15b2a303);
+            
+        
+
+        marker_f368bf4724bc3a52a0d8bebe1138c3d3.bindPopup(popup_c706618659ff14dcfe5d8f37227ff95b)
+        ;
+
+        
+    
+    
+                marker_f368bf4724bc3a52a0d8bebe1138c3d3.setIcon(icon_a0c9c1c0c217e4de977082a78697fdae);
+            
+    
+            var poly_line_05b62a3953db5b60de74d6458c8acebd = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7570117, -38.5530651]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_a77f859eb6d85e99fd428f45b2f6c465 = L.marker(
+                [-3.7570117, -38.5530651],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_e5bd34c6414a927a8dab9a1e6ecee3fa = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_a77f859eb6d85e99fd428f45b2f6c465.setIcon(div_icon_e5bd34c6414a927a8dab9a1e6ecee3fa);
+        
+    
+        var popup_f0c0c326ec5b695c038f2a28728337f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ff54a1ee6bcdaa34a2a1abddbeb63a3 = $(`<div id="html_2ff54a1ee6bcdaa34a2a1abddbeb63a3" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 1<br><b>Cliente:</b> COMETA (JOAO PESSOA)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 168.7<br><b>Faturamento:</b> R$ 3381.5</div>`)[0];
+                popup_f0c0c326ec5b695c038f2a28728337f0.setContent(html_2ff54a1ee6bcdaa34a2a1abddbeb63a3);
+            
+        
+
+        marker_a77f859eb6d85e99fd428f45b2f6c465.bindPopup(popup_f0c0c326ec5b695c038f2a28728337f0)
+        ;
+
+        
+    
+    
+            marker_a77f859eb6d85e99fd428f45b2f6c465.bindTooltip(
+                `<div>
+                     1 - COMETA (JOAO PESSOA) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a77f859eb6d85e99fd428f45b2f6c465.setIcon(div_icon_e5bd34c6414a927a8dab9a1e6ecee3fa);
+            
+    
+            var poly_line_7558d2d229149ae7b634ec65d82cc554 = L.polyline(
+                [[-3.7570117, -38.5530651], [-3.7495749, -38.5285489]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_179e4e1ee0364a26e29b2f0f693b4f08 = L.marker(
+                [-3.7495749, -38.5285489],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_07a81170b99358c1e7da536f957ce26d = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e2\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_179e4e1ee0364a26e29b2f0f693b4f08.setIcon(div_icon_07a81170b99358c1e7da536f957ce26d);
+        
+    
+        var popup_1d8c0a749b0ce11485c3ee112df4e5a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9aba1494a030ade99ef3a5a8d30e12c1 = $(`<div id="html_9aba1494a030ade99ef3a5a8d30e12c1" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 2<br><b>Cliente:</b> COMETA (TREZE DE MAIO)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 112.0<br><b>Faturamento:</b> R$ 2578.26</div>`)[0];
+                popup_1d8c0a749b0ce11485c3ee112df4e5a8.setContent(html_9aba1494a030ade99ef3a5a8d30e12c1);
+            
+        
+
+        marker_179e4e1ee0364a26e29b2f0f693b4f08.bindPopup(popup_1d8c0a749b0ce11485c3ee112df4e5a8)
+        ;
+
+        
+    
+    
+            marker_179e4e1ee0364a26e29b2f0f693b4f08.bindTooltip(
+                `<div>
+                     2 - COMETA (TREZE DE MAIO) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_179e4e1ee0364a26e29b2f0f693b4f08.setIcon(div_icon_07a81170b99358c1e7da536f957ce26d);
+            
+    
+            var poly_line_2aeda630786c525c37f5efbe5dc3e06b = L.polyline(
+                [[-3.7495749, -38.5285489], [-3.7532492, -38.5276962]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_1243d9dabb3bc497292597bba17de18f = L.marker(
+                [-3.7532492, -38.5276962],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_dfd408ebf5b704680707803483e50cb8 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e3\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_1243d9dabb3bc497292597bba17de18f.setIcon(div_icon_dfd408ebf5b704680707803483e50cb8);
+        
+    
+        var popup_de5c8cd2feacb26cf4b0cba703adc99a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_204954ccc645ebec6fccf2cf04d4fed1 = $(`<div id="html_204954ccc645ebec6fccf2cf04d4fed1" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 3<br><b>Cliente:</b> COMETA (FATIMA)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 77.0<br><b>Faturamento:</b> R$ 1731.54</div>`)[0];
+                popup_de5c8cd2feacb26cf4b0cba703adc99a.setContent(html_204954ccc645ebec6fccf2cf04d4fed1);
+            
+        
+
+        marker_1243d9dabb3bc497292597bba17de18f.bindPopup(popup_de5c8cd2feacb26cf4b0cba703adc99a)
+        ;
+
+        
+    
+    
+            marker_1243d9dabb3bc497292597bba17de18f.bindTooltip(
+                `<div>
+                     3 - COMETA (FATIMA) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1243d9dabb3bc497292597bba17de18f.setIcon(div_icon_dfd408ebf5b704680707803483e50cb8);
+            
+    
+            var poly_line_97458f658cf3ea3ccc707fcf24e1b0ae = L.polyline(
+                [[-3.7532492, -38.5276962], [-3.7955137, -38.4901664]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_ed5b8f85f55d586ba7a5e9234c27e840 = L.marker(
+                [-3.7955137, -38.4901664],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_d4d3c2d4c17e549a58879608f66d7d47 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e4\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_ed5b8f85f55d586ba7a5e9234c27e840.setIcon(div_icon_d4d3c2d4c17e549a58879608f66d7d47);
+        
+    
+        var popup_7f78b26b86c6cdcf6bed30702bcd72f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f38ee0f685f725be654cb87b44264ad8 = $(`<div id="html_f38ee0f685f725be654cb87b44264ad8" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 4<br><b>Cliente:</b> COMETA (OLIVEIRA PAIVA)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 64.6<br><b>Faturamento:</b> R$ 1588.5</div>`)[0];
+                popup_7f78b26b86c6cdcf6bed30702bcd72f2.setContent(html_f38ee0f685f725be654cb87b44264ad8);
+            
+        
+
+        marker_ed5b8f85f55d586ba7a5e9234c27e840.bindPopup(popup_7f78b26b86c6cdcf6bed30702bcd72f2)
+        ;
+
+        
+    
+    
+            marker_ed5b8f85f55d586ba7a5e9234c27e840.bindTooltip(
+                `<div>
+                     4 - COMETA (OLIVEIRA PAIVA) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed5b8f85f55d586ba7a5e9234c27e840.setIcon(div_icon_d4d3c2d4c17e549a58879608f66d7d47);
+            
+    
+            var poly_line_cb58d4591680c46ab554b84d4dd6cfd6 = L.polyline(
+                [[-3.7955137, -38.4901664], [-3.7888981, -38.4759777]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_d11e067a2eb00eebaed46cf1d2786b54 = L.marker(
+                [-3.7888981, -38.4759777],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_6fce48305f63a7897d0127e5fb7077ec = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e5\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_d11e067a2eb00eebaed46cf1d2786b54.setIcon(div_icon_6fce48305f63a7897d0127e5fb7077ec);
+        
+    
+        var popup_3a7461936ffac41f162ef4c451fec831 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b32662c0293e275d51377e8305a7a97 = $(`<div id="html_4b32662c0293e275d51377e8305a7a97" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 5<br><b>Cliente:</b> COMETA (ED BR SOARES)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 124.9<br><b>Faturamento:</b> R$ 2476.87</div>`)[0];
+                popup_3a7461936ffac41f162ef4c451fec831.setContent(html_4b32662c0293e275d51377e8305a7a97);
+            
+        
+
+        marker_d11e067a2eb00eebaed46cf1d2786b54.bindPopup(popup_3a7461936ffac41f162ef4c451fec831)
+        ;
+
+        
+    
+    
+            marker_d11e067a2eb00eebaed46cf1d2786b54.bindTooltip(
+                `<div>
+                     5 - COMETA (ED BR SOARES) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d11e067a2eb00eebaed46cf1d2786b54.setIcon(div_icon_6fce48305f63a7897d0127e5fb7077ec);
+            
+    
+            var poly_line_335e76f300bfdd29c0347e138ba91487 = L.polyline(
+                [[-3.7888981, -38.4759777], [-3.8194224, -38.4817816]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_51619579dfe99f367a4a1340f8e4f7f8 = L.marker(
+                [-3.8194224, -38.4817816],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_a19a62cb34463e328a4d89e8659dba1c = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e6\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_51619579dfe99f367a4a1340f8e4f7f8.setIcon(div_icon_a19a62cb34463e328a4d89e8659dba1c);
+        
+    
+        var popup_766c28c3a8831913ca28a429aad7e8ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82c7dcb65249eb14323c7614a9ac4bdc = $(`<div id="html_82c7dcb65249eb14323c7614a9ac4bdc" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 6<br><b>Cliente:</b> COMETA (MESSEJANA)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 134.7<br><b>Faturamento:</b> R$ 2117.18</div>`)[0];
+                popup_766c28c3a8831913ca28a429aad7e8ea.setContent(html_82c7dcb65249eb14323c7614a9ac4bdc);
+            
+        
+
+        marker_51619579dfe99f367a4a1340f8e4f7f8.bindPopup(popup_766c28c3a8831913ca28a429aad7e8ea)
+        ;
+
+        
+    
+    
+            marker_51619579dfe99f367a4a1340f8e4f7f8.bindTooltip(
+                `<div>
+                     6 - COMETA (MESSEJANA) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51619579dfe99f367a4a1340f8e4f7f8.setIcon(div_icon_a19a62cb34463e328a4d89e8659dba1c);
+            
+    
+            var poly_line_63fe18365cc56f6050d35e59a21babfc = L.polyline(
+                [[-3.8194224, -38.4817816], [-3.8795207, -38.4613795]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_61e39a17a53a474ebeafe692d6ab5ded = L.marker(
+                [-3.8795207, -38.4613795],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_f2b4e2ee3a033fb1f3e51f41c1544ef6 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e7\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_61e39a17a53a474ebeafe692d6ab5ded.setIcon(div_icon_f2b4e2ee3a033fb1f3e51f41c1544ef6);
+        
+    
+        var popup_0af72a08b51801a0d0a17a622fa4128d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7311bcd091d73cb83c3b7110dd70ab14 = $(`<div id="html_7311bcd091d73cb83c3b7110dd70ab14" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 7<br><b>Cliente:</b> COMETA (EUSEBIO)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 182.0<br><b>Faturamento:</b> R$ 3568.69</div>`)[0];
+                popup_0af72a08b51801a0d0a17a622fa4128d.setContent(html_7311bcd091d73cb83c3b7110dd70ab14);
+            
+        
+
+        marker_61e39a17a53a474ebeafe692d6ab5ded.bindPopup(popup_0af72a08b51801a0d0a17a622fa4128d)
+        ;
+
+        
+    
+    
+            marker_61e39a17a53a474ebeafe692d6ab5ded.bindTooltip(
+                `<div>
+                     7 - COMETA (EUSEBIO) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61e39a17a53a474ebeafe692d6ab5ded.setIcon(div_icon_f2b4e2ee3a033fb1f3e51f41c1544ef6);
+            
+    
+            var poly_line_a6f77dd07ca5b7c92e67e9ae3c22afa9 = L.polyline(
+                [[-3.8795207, -38.4613795], [-3.8301305, -38.4875383]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_bd617b8bb962cf55e0f1bf7bc3789d93 = L.marker(
+                [-3.8301305, -38.4875383],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_4783b3830aed1cf7a3dcf02a8690697a = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e8\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_bd617b8bb962cf55e0f1bf7bc3789d93.setIcon(div_icon_4783b3830aed1cf7a3dcf02a8690697a);
+        
+    
+        var popup_0e29acfb99e84b06cad9ad9723320b2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c3bfc7fc7af473cfe20a6947c8ef856 = $(`<div id="html_2c3bfc7fc7af473cfe20a6947c8ef856" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 8<br><b>Cliente:</b> COMETA (JOAQUIM FELICIO)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 204.6<br><b>Faturamento:</b> R$ 3788.99</div>`)[0];
+                popup_0e29acfb99e84b06cad9ad9723320b2b.setContent(html_2c3bfc7fc7af473cfe20a6947c8ef856);
+            
+        
+
+        marker_bd617b8bb962cf55e0f1bf7bc3789d93.bindPopup(popup_0e29acfb99e84b06cad9ad9723320b2b)
+        ;
+
+        
+    
+    
+            marker_bd617b8bb962cf55e0f1bf7bc3789d93.bindTooltip(
+                `<div>
+                     8 - COMETA (JOAQUIM FELICIO) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd617b8bb962cf55e0f1bf7bc3789d93.setIcon(div_icon_4783b3830aed1cf7a3dcf02a8690697a);
+            
+    
+            var poly_line_1b69f8a493f04c529bcf7e5cf38c3031 = L.polyline(
+                [[-3.8301305, -38.4875383], [-3.782635, -38.5538401]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var marker_605b45e2b55b69aff1390a8318903cbe = L.marker(
+                [-3.782635, -38.5538401],
+                {
+}
+            ).addTo(feature_group_8fd6f218919ac2889c967fb5e7f0faaf);
+        
+    
+            var div_icon_ee8109827b878fb755e05e7dae1ec4f1 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkred;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e9\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_605b45e2b55b69aff1390a8318903cbe.setIcon(div_icon_ee8109827b878fb755e05e7dae1ec4f1);
+        
+    
+        var popup_6012d0e32e812466ef9c855c99a778c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61a03fcb412a911eda4fb79fbeb949e5 = $(`<div id="html_61a03fcb412a911eda4fb79fbeb949e5" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>HYQ9905<br><b>Ordem:</b> 9<br><b>Cliente:</b> COMETA (JOAO CARLOS)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 155.6<br><b>Faturamento:</b> R$ 2635.74</div>`)[0];
+                popup_6012d0e32e812466ef9c855c99a778c6.setContent(html_61a03fcb412a911eda4fb79fbeb949e5);
+            
+        
+
+        marker_605b45e2b55b69aff1390a8318903cbe.bindPopup(popup_6012d0e32e812466ef9c855c99a778c6)
+        ;
+
+        
+    
+    
+            marker_605b45e2b55b69aff1390a8318903cbe.bindTooltip(
+                `<div>
+                     9 - COMETA (JOAO CARLOS) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_605b45e2b55b69aff1390a8318903cbe.setIcon(div_icon_ee8109827b878fb755e05e7dae1ec4f1);
+            
+    
+            feature_group_8fd6f218919ac2889c967fb5e7f0faaf.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_747ca75d03f301eb65eb787377869885 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_928afce0c8f53334519972e3c3639536 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var icon_08a30f2cedef7c3b3934522756188e56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5025568f639059bc8dcfe8f3e65e87a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ddc210cd18efe6a927cafa44fb2103b = $(`<div id="html_0ddc210cd18efe6a927cafa44fb2103b" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_5025568f639059bc8dcfe8f3e65e87a3.setContent(html_0ddc210cd18efe6a927cafa44fb2103b);
+            
+        
+
+        marker_928afce0c8f53334519972e3c3639536.bindPopup(popup_5025568f639059bc8dcfe8f3e65e87a3)
+        ;
+
+        
+    
+    
+                marker_928afce0c8f53334519972e3c3639536.setIcon(icon_08a30f2cedef7c3b3934522756188e56);
+            
+    
+            var poly_line_70fd76a839406baf1990975a925655fd = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7779625, -38.5519438]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var marker_784832e2df897456feeb84c8807a14ae = L.marker(
+                [-3.7779625, -38.5519438],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var div_icon_78ec9cd58ac67905b5e301c2baabbda0 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_784832e2df897456feeb84c8807a14ae.setIcon(div_icon_78ec9cd58ac67905b5e301c2baabbda0);
+        
+    
+        var popup_7ccd6fe94abd64e3754aa8540f0e09d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1817176302ef01c418faee471e5ab95 = $(`<div id="html_f1817176302ef01c418faee471e5ab95" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OCB9225<br><b>Ordem:</b> 1<br><b>Cliente:</b> SUPER SAO JOSE<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 37.2<br><b>Faturamento:</b> R$ 170.4</div>`)[0];
+                popup_7ccd6fe94abd64e3754aa8540f0e09d2.setContent(html_f1817176302ef01c418faee471e5ab95);
+            
+        
+
+        marker_784832e2df897456feeb84c8807a14ae.bindPopup(popup_7ccd6fe94abd64e3754aa8540f0e09d2)
+        ;
+
+        
+    
+    
+            marker_784832e2df897456feeb84c8807a14ae.bindTooltip(
+                `<div>
+                     1 - SUPER SAO JOSE (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_784832e2df897456feeb84c8807a14ae.setIcon(div_icon_78ec9cd58ac67905b5e301c2baabbda0);
+            
+    
+            var poly_line_a55527b04275e54ee170d4fedf3d1245 = L.polyline(
+                [[-3.7779625, -38.5519438], [-3.7374817, -38.5204755]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var marker_f12da31960897ce3159cb28bfeb85f29 = L.marker(
+                [-3.7374817, -38.5204755],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var div_icon_0fe1ecc582cf8abe961c19e6a20cc323 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e2\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_f12da31960897ce3159cb28bfeb85f29.setIcon(div_icon_0fe1ecc582cf8abe961c19e6a20cc323);
+        
+    
+        var popup_1b771941944b29b072efddd52492a386 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56177de343a3ea9fd4f0eba2d1b44f1e = $(`<div id="html_56177de343a3ea9fd4f0eba2d1b44f1e" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OCB9225<br><b>Ordem:</b> 2<br><b>Cliente:</b> COMETA (J DA PENHA)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 160.1<br><b>Faturamento:</b> R$ 3142.99</div>`)[0];
+                popup_1b771941944b29b072efddd52492a386.setContent(html_56177de343a3ea9fd4f0eba2d1b44f1e);
+            
+        
+
+        marker_f12da31960897ce3159cb28bfeb85f29.bindPopup(popup_1b771941944b29b072efddd52492a386)
+        ;
+
+        
+    
+    
+            marker_f12da31960897ce3159cb28bfeb85f29.bindTooltip(
+                `<div>
+                     2 - COMETA (J DA PENHA) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f12da31960897ce3159cb28bfeb85f29.setIcon(div_icon_0fe1ecc582cf8abe961c19e6a20cc323);
+            
+    
+            var poly_line_1e90ff740e0f2ec3d5f23059ffd03eff = L.polyline(
+                [[-3.7374817, -38.5204755], [-3.73996838, -38.53237147]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var marker_c0c507bef9a9ec24d8c91b4d56e00a16 = L.marker(
+                [-3.73996838, -38.53237147],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var div_icon_cd914928e8ba91a98056d3f6620b5371 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e3\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c0c507bef9a9ec24d8c91b4d56e00a16.setIcon(div_icon_cd914928e8ba91a98056d3f6620b5371);
+        
+    
+        var popup_00bb26dc4c1431cf4169aadfd240b601 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff85ef5a17f0f23de5430881856fc676 = $(`<div id="html_ff85ef5a17f0f23de5430881856fc676" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OCB9225<br><b>Ordem:</b> 3<br><b>Cliente:</b> COMETA (BARAO DO RIO BRANCO)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 144.3<br><b>Faturamento:</b> R$ 3133.59</div>`)[0];
+                popup_00bb26dc4c1431cf4169aadfd240b601.setContent(html_ff85ef5a17f0f23de5430881856fc676);
+            
+        
+
+        marker_c0c507bef9a9ec24d8c91b4d56e00a16.bindPopup(popup_00bb26dc4c1431cf4169aadfd240b601)
+        ;
+
+        
+    
+    
+            marker_c0c507bef9a9ec24d8c91b4d56e00a16.bindTooltip(
+                `<div>
+                     3 - COMETA (BARAO DO RIO BRANCO) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0c507bef9a9ec24d8c91b4d56e00a16.setIcon(div_icon_cd914928e8ba91a98056d3f6620b5371);
+            
+    
+            var poly_line_c19be38816b240ed968f60fbd943de4e = L.polyline(
+                [[-3.73996838, -38.53237147], [-3.73839532, -38.53222215]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var marker_e79e766ec7fc26c764de03df37ec894e = L.marker(
+                [-3.73839532, -38.53222215],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var div_icon_ffbb959c0781b759faf29962a2238c18 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e4\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_e79e766ec7fc26c764de03df37ec894e.setIcon(div_icon_ffbb959c0781b759faf29962a2238c18);
+        
+    
+        var popup_5ffd88e7044a2eafb9d199b56e061644 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aed9a273f6f0162f6c14e4d43b4a571c = $(`<div id="html_aed9a273f6f0162f6c14e4d43b4a571c" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OCB9225<br><b>Ordem:</b> 4<br><b>Cliente:</b> SUPER GENTILANDIA- JOSE BONIFACIO<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 22.3<br><b>Faturamento:</b> R$ 483.8</div>`)[0];
+                popup_5ffd88e7044a2eafb9d199b56e061644.setContent(html_aed9a273f6f0162f6c14e4d43b4a571c);
+            
+        
+
+        marker_e79e766ec7fc26c764de03df37ec894e.bindPopup(popup_5ffd88e7044a2eafb9d199b56e061644)
+        ;
+
+        
+    
+    
+            marker_e79e766ec7fc26c764de03df37ec894e.bindTooltip(
+                `<div>
+                     4 - SUPER GENTILANDIA- JOSE BONIFACIO (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e79e766ec7fc26c764de03df37ec894e.setIcon(div_icon_ffbb959c0781b759faf29962a2238c18);
+            
+    
+            var poly_line_417960d93509a8a0df2edbca2bfe45b1 = L.polyline(
+                [[-3.73839532, -38.53222215], [-3.7309369, -38.5376384]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var marker_7413601db64307e001fe3fa590f1a4f6 = L.marker(
+                [-3.7309369, -38.5376384],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var div_icon_8109c651fb4a8a947afc91e13dc87497 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e5\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_7413601db64307e001fe3fa590f1a4f6.setIcon(div_icon_8109c651fb4a8a947afc91e13dc87497);
+        
+    
+        var popup_a0d6f59ce810b2b23888f658b20dda05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e873c8fa0445b24660242d44524fb856 = $(`<div id="html_e873c8fa0445b24660242d44524fb856" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OCB9225<br><b>Ordem:</b> 5<br><b>Cliente:</b> LAREDO - CENTRO<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 90.0<br><b>Faturamento:</b> R$ 812.8</div>`)[0];
+                popup_a0d6f59ce810b2b23888f658b20dda05.setContent(html_e873c8fa0445b24660242d44524fb856);
+            
+        
+
+        marker_7413601db64307e001fe3fa590f1a4f6.bindPopup(popup_a0d6f59ce810b2b23888f658b20dda05)
+        ;
+
+        
+    
+    
+            marker_7413601db64307e001fe3fa590f1a4f6.bindTooltip(
+                `<div>
+                     5 - LAREDO - CENTRO (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7413601db64307e001fe3fa590f1a4f6.setIcon(div_icon_8109c651fb4a8a947afc91e13dc87497);
+            
+    
+            var poly_line_91432f83b021710b5bf5e760af1c6761 = L.polyline(
+                [[-3.7309369, -38.5376384], [-3.7216531, -38.540229]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var marker_faf260f568518b4738b7df34e9abb69b = L.marker(
+                [-3.7216531, -38.540229],
+                {
+}
+            ).addTo(feature_group_747ca75d03f301eb65eb787377869885);
+        
+    
+            var div_icon_180211dec79aa1af21bd22ab07487321 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:darkblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e6\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_faf260f568518b4738b7df34e9abb69b.setIcon(div_icon_180211dec79aa1af21bd22ab07487321);
+        
+    
+        var popup_5c3aa3c9a432437a40eb2d01b369db86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_692874c1e2d6f365d74f34a1b72cbb48 = $(`<div id="html_692874c1e2d6f365d74f34a1b72cbb48" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OCB9225<br><b>Ordem:</b> 6<br><b>Cliente:</b> COMETA (CENTRO)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 123.1<br><b>Faturamento:</b> R$ 2294.64</div>`)[0];
+                popup_5c3aa3c9a432437a40eb2d01b369db86.setContent(html_692874c1e2d6f365d74f34a1b72cbb48);
+            
+        
+
+        marker_faf260f568518b4738b7df34e9abb69b.bindPopup(popup_5c3aa3c9a432437a40eb2d01b369db86)
+        ;
+
+        
+    
+    
+            marker_faf260f568518b4738b7df34e9abb69b.bindTooltip(
+                `<div>
+                     6 - COMETA (CENTRO) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_faf260f568518b4738b7df34e9abb69b.setIcon(div_icon_180211dec79aa1af21bd22ab07487321);
+            
+    
+            feature_group_747ca75d03f301eb65eb787377869885.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_77380b5fd026e1e42f6a68f0c95211b7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_c43fe5c231ae447cc2332e4671254d4b = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var icon_fe176a21cfb99bf8000cb3da5d1c3b5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18fd951e9aa07f5c3e92ccc720b8eccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_608c27863a5bdb1d858d3bf1fe28484b = $(`<div id="html_608c27863a5bdb1d858d3bf1fe28484b" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_18fd951e9aa07f5c3e92ccc720b8eccc.setContent(html_608c27863a5bdb1d858d3bf1fe28484b);
+            
+        
+
+        marker_c43fe5c231ae447cc2332e4671254d4b.bindPopup(popup_18fd951e9aa07f5c3e92ccc720b8eccc)
+        ;
+
+        
+    
+    
+                marker_c43fe5c231ae447cc2332e4671254d4b.setIcon(icon_fe176a21cfb99bf8000cb3da5d1c3b5c);
+            
+    
+            var poly_line_7b34008a143cb75049dccb7af493b452 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7392121, -38.5924565]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var marker_cde25ac376160c062772e928b06525d1 = L.marker(
+                [-3.7392121, -38.5924565],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var div_icon_e0e2d8f66ff8c8568b8de7fb775ab831 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:red;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_cde25ac376160c062772e928b06525d1.setIcon(div_icon_e0e2d8f66ff8c8568b8de7fb775ab831);
+        
+    
+        var popup_42cc3a644087e27c3787d08cb8bbc475 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04d778a21da17c9d5fac7569ede5ee0d = $(`<div id="html_04d778a21da17c9d5fac7569ede5ee0d" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OSH4598<br><b>Ordem:</b> 1<br><b>Cliente:</b> COMPREMAX - MISTER HULL<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 74.4<br><b>Faturamento:</b> R$ 1822.51</div>`)[0];
+                popup_42cc3a644087e27c3787d08cb8bbc475.setContent(html_04d778a21da17c9d5fac7569ede5ee0d);
+            
+        
+
+        marker_cde25ac376160c062772e928b06525d1.bindPopup(popup_42cc3a644087e27c3787d08cb8bbc475)
+        ;
+
+        
+    
+    
+            marker_cde25ac376160c062772e928b06525d1.bindTooltip(
+                `<div>
+                     1 - COMPREMAX - MISTER HULL (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cde25ac376160c062772e928b06525d1.setIcon(div_icon_e0e2d8f66ff8c8568b8de7fb775ab831);
+            
+    
+            var poly_line_b897b325480a44bb0f0d38dd1b4a2c4f = L.polyline(
+                [[-3.7392121, -38.5924565], [-3.730491, -38.5771848]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var marker_4befbe49b59546118fdfa17e3da65402 = L.marker(
+                [-3.730491, -38.5771848],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var div_icon_8aaa5d0051ca4ede64b027d783cf3bc8 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:red;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e2\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_4befbe49b59546118fdfa17e3da65402.setIcon(div_icon_8aaa5d0051ca4ede64b027d783cf3bc8);
+        
+    
+        var popup_7786a99228ca9af1b94520201bdfbc24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e8a0a7e0b4c507c317f6d67f8fc1c0d = $(`<div id="html_0e8a0a7e0b4c507c317f6d67f8fc1c0d" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OSH4598<br><b>Ordem:</b> 2<br><b>Cliente:</b> COMPREMAX - SGT HERMINIO<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 39.8<br><b>Faturamento:</b> R$ 926.0</div>`)[0];
+                popup_7786a99228ca9af1b94520201bdfbc24.setContent(html_0e8a0a7e0b4c507c317f6d67f8fc1c0d);
+            
+        
+
+        marker_4befbe49b59546118fdfa17e3da65402.bindPopup(popup_7786a99228ca9af1b94520201bdfbc24)
+        ;
+
+        
+    
+    
+            marker_4befbe49b59546118fdfa17e3da65402.bindTooltip(
+                `<div>
+                     2 - COMPREMAX - SGT HERMINIO (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4befbe49b59546118fdfa17e3da65402.setIcon(div_icon_8aaa5d0051ca4ede64b027d783cf3bc8);
+            
+    
+            var poly_line_a542d339d19128f3a4d98f13f20bacb9 = L.polyline(
+                [[-3.730491, -38.5771848], [-3.7049139, -38.5780082]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var marker_5940b5f99d38be0f69dd8232a6330112 = L.marker(
+                [-3.7049139, -38.5780082],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var div_icon_f3a35f7b219fc4effcfc7b22d1628906 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:red;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e3\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_5940b5f99d38be0f69dd8232a6330112.setIcon(div_icon_f3a35f7b219fc4effcfc7b22d1628906);
+        
+    
+        var popup_4da894fc3342d96ab1b9528cf9007a43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03ed5359ec1e7a67ff6f9636d9fcbae0 = $(`<div id="html_03ed5359ec1e7a67ff6f9636d9fcbae0" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OSH4598<br><b>Ordem:</b> 3<br><b>Cliente:</b> COMETA (CASTELO BRANCO)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 254.7<br><b>Faturamento:</b> R$ 4674.06</div>`)[0];
+                popup_4da894fc3342d96ab1b9528cf9007a43.setContent(html_03ed5359ec1e7a67ff6f9636d9fcbae0);
+            
+        
+
+        marker_5940b5f99d38be0f69dd8232a6330112.bindPopup(popup_4da894fc3342d96ab1b9528cf9007a43)
+        ;
+
+        
+    
+    
+            marker_5940b5f99d38be0f69dd8232a6330112.bindTooltip(
+                `<div>
+                     3 - COMETA (CASTELO BRANCO) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5940b5f99d38be0f69dd8232a6330112.setIcon(div_icon_f3a35f7b219fc4effcfc7b22d1628906);
+            
+    
+            var poly_line_39a48ae82ad3de8b2ec9400a5992a320 = L.polyline(
+                [[-3.7049139, -38.5780082], [-3.7123457, -38.5589927]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var marker_6c60c722965f4ffac0c5e052303601f4 = L.marker(
+                [-3.7123457, -38.5589927],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var div_icon_45d56780c498f25cc4050d7fb15f2a8c = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:red;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e4\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_6c60c722965f4ffac0c5e052303601f4.setIcon(div_icon_45d56780c498f25cc4050d7fb15f2a8c);
+        
+    
+        var popup_860b99bd25c1e99b7edd60e6d067e24d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e1885fc21c6f508e0d29952065dbc3f = $(`<div id="html_0e1885fc21c6f508e0d29952065dbc3f" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OSH4598<br><b>Ordem:</b> 4<br><b>Cliente:</b> MERCANTIL NOVO BOX LTDA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 52.6<br><b>Faturamento:</b> R$ 918.48</div>`)[0];
+                popup_860b99bd25c1e99b7edd60e6d067e24d.setContent(html_0e1885fc21c6f508e0d29952065dbc3f);
+            
+        
+
+        marker_6c60c722965f4ffac0c5e052303601f4.bindPopup(popup_860b99bd25c1e99b7edd60e6d067e24d)
+        ;
+
+        
+    
+    
+            marker_6c60c722965f4ffac0c5e052303601f4.bindTooltip(
+                `<div>
+                     4 - MERCANTIL NOVO BOX LTDA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c60c722965f4ffac0c5e052303601f4.setIcon(div_icon_45d56780c498f25cc4050d7fb15f2a8c);
+            
+    
+            var poly_line_57351b34fd4a84b867a124d564e08a89 = L.polyline(
+                [[-3.7123457, -38.5589927], [-3.7403104, -38.5603054]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var marker_c7db6e7456e96accdd5f5dd99e1e6f5b = L.marker(
+                [-3.7403104, -38.5603054],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var div_icon_58dbc8761b43e5120267498a217122ea = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:red;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e5\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_c7db6e7456e96accdd5f5dd99e1e6f5b.setIcon(div_icon_58dbc8761b43e5120267498a217122ea);
+        
+    
+        var popup_2dddb6550088168dc079ac6fbecb1790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe408f802d77e23ce0b0b6077bd6ade5 = $(`<div id="html_fe408f802d77e23ce0b0b6077bd6ade5" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OSH4598<br><b>Ordem:</b> 5<br><b>Cliente:</b> COMETA (JOVITA FEITOSA)<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 124.7<br><b>Faturamento:</b> R$ 3067.02</div>`)[0];
+                popup_2dddb6550088168dc079ac6fbecb1790.setContent(html_fe408f802d77e23ce0b0b6077bd6ade5);
+            
+        
+
+        marker_c7db6e7456e96accdd5f5dd99e1e6f5b.bindPopup(popup_2dddb6550088168dc079ac6fbecb1790)
+        ;
+
+        
+    
+    
+            marker_c7db6e7456e96accdd5f5dd99e1e6f5b.bindTooltip(
+                `<div>
+                     5 - COMETA (JOVITA FEITOSA) (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7db6e7456e96accdd5f5dd99e1e6f5b.setIcon(div_icon_58dbc8761b43e5120267498a217122ea);
+            
+    
+            var poly_line_57cb8bdb9a606a452f18f80b4fd1b57b = L.polyline(
+                [[-3.7403104, -38.5603054], [-3.83265451, -38.58103395]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var marker_d19b8b39020d354c62b2237270c0bebd = L.marker(
+                [-3.83265451, -38.58103395],
+                {
+}
+            ).addTo(feature_group_77380b5fd026e1e42f6a68f0c95211b7);
+        
+    
+            var div_icon_0083ad3121d9fa70e59fb165e91d1eba = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:red;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e6\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_d19b8b39020d354c62b2237270c0bebd.setIcon(div_icon_0083ad3121d9fa70e59fb165e91d1eba);
+        
+    
+        var popup_d4bdb90a91641501ac7d6a2c8741ed8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4f593d17765b8051ea7ac4e7885a12b = $(`<div id="html_b4f593d17765b8051ea7ac4e7885a12b" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>OSH4598<br><b>Ordem:</b> 6<br><b>Cliente:</b> COMPREMAX - GODOFREDO<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 46.8<br><b>Faturamento:</b> R$ 825.32</div>`)[0];
+                popup_d4bdb90a91641501ac7d6a2c8741ed8c.setContent(html_b4f593d17765b8051ea7ac4e7885a12b);
+            
+        
+
+        marker_d19b8b39020d354c62b2237270c0bebd.bindPopup(popup_d4bdb90a91641501ac7d6a2c8741ed8c)
+        ;
+
+        
+    
+    
+            marker_d19b8b39020d354c62b2237270c0bebd.bindTooltip(
+                `<div>
+                     6 - COMPREMAX - GODOFREDO (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d19b8b39020d354c62b2237270c0bebd.setIcon(div_icon_0083ad3121d9fa70e59fb165e91d1eba);
+            
+    
+            feature_group_77380b5fd026e1e42f6a68f0c95211b7.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_b6ddb94de64ecff30cae27a7a6bde8d6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d846d2470f5bb1c0ad1977149ede09f2 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var icon_def4f6743f5a9022ebf77db0be39a95d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b046f5efb6979555d2a21a68f7360d31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a66d7f4800be7c53060ab5776bd8cd24 = $(`<div id="html_a66d7f4800be7c53060ab5776bd8cd24" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_b046f5efb6979555d2a21a68f7360d31.setContent(html_a66d7f4800be7c53060ab5776bd8cd24);
+            
+        
+
+        marker_d846d2470f5bb1c0ad1977149ede09f2.bindPopup(popup_b046f5efb6979555d2a21a68f7360d31)
+        ;
+
+        
+    
+    
+                marker_d846d2470f5bb1c0ad1977149ede09f2.setIcon(icon_def4f6743f5a9022ebf77db0be39a95d);
+            
+    
+            var poly_line_b8ba42c37cb8c67a521410f3c396c638 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7594355, -38.6163545]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var marker_5048135d09afe55d297cba67c767197f = L.marker(
+                [-3.7594355, -38.6163545],
+                {
+}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var div_icon_a2e1dd88fc7578a2f4b5beee899468ab = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:orange;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_5048135d09afe55d297cba67c767197f.setIcon(div_icon_a2e1dd88fc7578a2f4b5beee899468ab);
+        
+    
+        var popup_70186ff2df8d6ad0692961a14e973d18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3f1f55f24f7c1f2fc1a050010bfd525 = $(`<div id="html_d3f1f55f24f7c1f2fc1a050010bfd525" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4654<br><b>Ordem:</b> 1<br><b>Cliente:</b> EXITO - PRQ ALBANO<br><b>Turno:</b> MANHA<br><b>Peso:</b> 87.4<br><b>Faturamento:</b> R$ 1393.46</div>`)[0];
+                popup_70186ff2df8d6ad0692961a14e973d18.setContent(html_d3f1f55f24f7c1f2fc1a050010bfd525);
+            
+        
+
+        marker_5048135d09afe55d297cba67c767197f.bindPopup(popup_70186ff2df8d6ad0692961a14e973d18)
+        ;
+
+        
+    
+    
+            marker_5048135d09afe55d297cba67c767197f.bindTooltip(
+                `<div>
+                     1 - EXITO - PRQ ALBANO (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5048135d09afe55d297cba67c767197f.setIcon(div_icon_a2e1dd88fc7578a2f4b5beee899468ab);
+            
+    
+            var poly_line_59594c37d4676e28ad425705a73d5825 = L.polyline(
+                [[-3.7594355, -38.6163545], [-3.77334061, -38.62707738]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var marker_591a1ab05a4515eb776413aa0a9e71da = L.marker(
+                [-3.77334061, -38.62707738],
+                {
+}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var div_icon_c1660a5c3c93a07d44d7723fe1f950d4 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:orange;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e2\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_591a1ab05a4515eb776413aa0a9e71da.setIcon(div_icon_c1660a5c3c93a07d44d7723fe1f950d4);
+        
+    
+        var popup_e06784afaa4788d2a6d116ae9fccde15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_075dec8b3c37f4be03d31bef6eca11d4 = $(`<div id="html_075dec8b3c37f4be03d31bef6eca11d4" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4654<br><b>Ordem:</b> 2<br><b>Cliente:</b> COMPREMAX - JUREMA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 105.5<br><b>Faturamento:</b> R$ 1307.2</div>`)[0];
+                popup_e06784afaa4788d2a6d116ae9fccde15.setContent(html_075dec8b3c37f4be03d31bef6eca11d4);
+            
+        
+
+        marker_591a1ab05a4515eb776413aa0a9e71da.bindPopup(popup_e06784afaa4788d2a6d116ae9fccde15)
+        ;
+
+        
+    
+    
+            marker_591a1ab05a4515eb776413aa0a9e71da.bindTooltip(
+                `<div>
+                     2 - COMPREMAX - JUREMA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_591a1ab05a4515eb776413aa0a9e71da.setIcon(div_icon_c1660a5c3c93a07d44d7723fe1f950d4);
+            
+    
+            var poly_line_b55db08f372a6219b1690f1fcdf29b67 = L.polyline(
+                [[-3.77334061, -38.62707738], [-3.76944093, -38.65433696]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var marker_d674006e0a6e97c85d899d627c35c585 = L.marker(
+                [-3.76944093, -38.65433696],
+                {
+}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var div_icon_46f1c36af95ece459f5fd78dd3569a40 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:orange;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e3\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_d674006e0a6e97c85d899d627c35c585.setIcon(div_icon_46f1c36af95ece459f5fd78dd3569a40);
+        
+    
+        var popup_4aae9690df3786ed57b9c1a8d1d36736 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb5c22ad29310bf224984b7460fe846d = $(`<div id="html_bb5c22ad29310bf224984b7460fe846d" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4654<br><b>Ordem:</b> 3<br><b>Cliente:</b> COMPREMAX - CONJ NOVA METROPOLE<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 97.7<br><b>Faturamento:</b> R$ 1367.0</div>`)[0];
+                popup_4aae9690df3786ed57b9c1a8d1d36736.setContent(html_bb5c22ad29310bf224984b7460fe846d);
+            
+        
+
+        marker_d674006e0a6e97c85d899d627c35c585.bindPopup(popup_4aae9690df3786ed57b9c1a8d1d36736)
+        ;
+
+        
+    
+    
+            marker_d674006e0a6e97c85d899d627c35c585.bindTooltip(
+                `<div>
+                     3 - COMPREMAX - CONJ NOVA METROPOLE (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d674006e0a6e97c85d899d627c35c585.setIcon(div_icon_46f1c36af95ece459f5fd78dd3569a40);
+            
+    
+            var poly_line_515b3eeac74bc155a1d171f41893b445 = L.polyline(
+                [[-3.76944093, -38.65433696], [-3.7666193, -38.6538536]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var marker_e4e8d8ab46cd20262fa613c47201b7b9 = L.marker(
+                [-3.7666193, -38.6538536],
+                {
+}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var div_icon_891485d88d5c4842d8c1c7a6c5f4ebde = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:orange;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e4\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_e4e8d8ab46cd20262fa613c47201b7b9.setIcon(div_icon_891485d88d5c4842d8c1c7a6c5f4ebde);
+        
+    
+        var popup_b3d13e1277db35bd448521158d8551ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e58f377212fec98822f8bcdc34ad51c = $(`<div id="html_1e58f377212fec98822f8bcdc34ad51c" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4654<br><b>Ordem:</b> 4<br><b>Cliente:</b> COMPREMAX - METROPOLE<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 51.2<br><b>Faturamento:</b> R$ 733.6</div>`)[0];
+                popup_b3d13e1277db35bd448521158d8551ff.setContent(html_1e58f377212fec98822f8bcdc34ad51c);
+            
+        
+
+        marker_e4e8d8ab46cd20262fa613c47201b7b9.bindPopup(popup_b3d13e1277db35bd448521158d8551ff)
+        ;
+
+        
+    
+    
+            marker_e4e8d8ab46cd20262fa613c47201b7b9.bindTooltip(
+                `<div>
+                     4 - COMPREMAX - METROPOLE (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e4e8d8ab46cd20262fa613c47201b7b9.setIcon(div_icon_891485d88d5c4842d8c1c7a6c5f4ebde);
+            
+    
+            var poly_line_877521a48725c102d3cfc252dbf4b097 = L.polyline(
+                [[-3.7666193, -38.6538536], [-3.67322246, -38.67026304]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var marker_d22db09252f69e10088c6696255853f7 = L.marker(
+                [-3.67322246, -38.67026304],
+                {
+}
+            ).addTo(feature_group_b6ddb94de64ecff30cae27a7a6bde8d6);
+        
+    
+            var div_icon_df86e0ffd83b656d7cd057f9e0d432ed = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:orange;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e5\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_d22db09252f69e10088c6696255853f7.setIcon(div_icon_df86e0ffd83b656d7cd057f9e0d432ed);
+        
+    
+        var popup_6383269a7d6951a241ad2eaa136edb5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e4e7b78391d2289f73d1445c6d96efa = $(`<div id="html_7e4e7b78391d2289f73d1445c6d96efa" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4654<br><b>Ordem:</b> 5<br><b>Cliente:</b> COMPREMAX - ICARAI<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 131.8<br><b>Faturamento:</b> R$ 1887.8</div>`)[0];
+                popup_6383269a7d6951a241ad2eaa136edb5b.setContent(html_7e4e7b78391d2289f73d1445c6d96efa);
+            
+        
+
+        marker_d22db09252f69e10088c6696255853f7.bindPopup(popup_6383269a7d6951a241ad2eaa136edb5b)
+        ;
+
+        
+    
+    
+            marker_d22db09252f69e10088c6696255853f7.bindTooltip(
+                `<div>
+                     5 - COMPREMAX - ICARAI (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d22db09252f69e10088c6696255853f7.setIcon(div_icon_df86e0ffd83b656d7cd057f9e0d432ed);
+            
+    
+            feature_group_b6ddb94de64ecff30cae27a7a6bde8d6.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_44a89ec420a678cfd74f95ec2164d35e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b1bbcc549560a67580026b23f42cd8b9 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var icon_e0e1b344d4c651d737146f726d727ecd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc69aca03eed21819647fd8e8a8452e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23ed31286478e03607d7c08245d83e8a = $(`<div id="html_23ed31286478e03607d7c08245d83e8a" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_bc69aca03eed21819647fd8e8a8452e9.setContent(html_23ed31286478e03607d7c08245d83e8a);
+            
+        
+
+        marker_b1bbcc549560a67580026b23f42cd8b9.bindPopup(popup_bc69aca03eed21819647fd8e8a8452e9)
+        ;
+
+        
+    
+    
+                marker_b1bbcc549560a67580026b23f42cd8b9.setIcon(icon_e0e1b344d4c651d737146f726d727ecd);
+            
+    
+            var poly_line_30a96708bc8c8161089edd300a28d329 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7842908, -38.5691114]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var marker_17a8bc3d70cdde1ddca478db284436eb = L.marker(
+                [-3.7842908, -38.5691114],
+                {
+}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var div_icon_f518dd2a88b0440989fc4561d7f94959 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:blue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_17a8bc3d70cdde1ddca478db284436eb.setIcon(div_icon_f518dd2a88b0440989fc4561d7f94959);
+        
+    
+        var popup_b4504e534c65e01eb9a5fd33ed16107e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_909e51d9ef77cd2af10458c282d18d44 = $(`<div id="html_909e51d9ef77cd2af10458c282d18d44" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4814<br><b>Ordem:</b> 1<br><b>Cliente:</b> SUPER PORTUGAL - MARAPONGA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 8.5<br><b>Faturamento:</b> R$ 293.0</div>`)[0];
+                popup_b4504e534c65e01eb9a5fd33ed16107e.setContent(html_909e51d9ef77cd2af10458c282d18d44);
+            
+        
+
+        marker_17a8bc3d70cdde1ddca478db284436eb.bindPopup(popup_b4504e534c65e01eb9a5fd33ed16107e)
+        ;
+
+        
+    
+    
+            marker_17a8bc3d70cdde1ddca478db284436eb.bindTooltip(
+                `<div>
+                     1 - SUPER PORTUGAL - MARAPONGA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17a8bc3d70cdde1ddca478db284436eb.setIcon(div_icon_f518dd2a88b0440989fc4561d7f94959);
+            
+    
+            var poly_line_895d04e621c3e4bd30baef1e547d40a8 = L.polyline(
+                [[-3.7842908, -38.5691114], [-3.7807845, -38.5966783]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var marker_8f34d7ac730cf503ab6582200f0a8019 = L.marker(
+                [-3.7807845, -38.5966783],
+                {
+}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var div_icon_f1182fa1f469cf04948089e593ed64be = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:blue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e2\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_8f34d7ac730cf503ab6582200f0a8019.setIcon(div_icon_f1182fa1f469cf04948089e593ed64be);
+        
+    
+        var popup_0067009c99962a6cdef1353a22ef9da6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89f5e334780b5563072d58df3e1431bd = $(`<div id="html_89f5e334780b5563072d58df3e1431bd" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4814<br><b>Ordem:</b> 2<br><b>Cliente:</b> SUPER PORTUGAL - BRAGANCA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 9.6<br><b>Faturamento:</b> R$ 327.3</div>`)[0];
+                popup_0067009c99962a6cdef1353a22ef9da6.setContent(html_89f5e334780b5563072d58df3e1431bd);
+            
+        
+
+        marker_8f34d7ac730cf503ab6582200f0a8019.bindPopup(popup_0067009c99962a6cdef1353a22ef9da6)
+        ;
+
+        
+    
+    
+            marker_8f34d7ac730cf503ab6582200f0a8019.bindTooltip(
+                `<div>
+                     2 - SUPER PORTUGAL - BRAGANCA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8f34d7ac730cf503ab6582200f0a8019.setIcon(div_icon_f1182fa1f469cf04948089e593ed64be);
+            
+    
+            var poly_line_b81d933f6ef6f5a8ad7b6cdd1e0c3bce = L.polyline(
+                [[-3.7807845, -38.5966783], [-3.7688869, -38.6231497]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var marker_016d246dc59e474ecc58a53155cf1a64 = L.marker(
+                [-3.7688869, -38.6231497],
+                {
+}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var div_icon_494d2c2055f68e75af7f8eccd886928e = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:blue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e3\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_016d246dc59e474ecc58a53155cf1a64.setIcon(div_icon_494d2c2055f68e75af7f8eccd886928e);
+        
+    
+        var popup_2ad93f38f5f5a8237e54636dbd90639b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_422bc5fe6970ce5c2faa0847eff24fc0 = $(`<div id="html_422bc5fe6970ce5c2faa0847eff24fc0" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4814<br><b>Ordem:</b> 3<br><b>Cliente:</b> EXITO - PRQ POTIRA II<br><b>Turno:</b> MANHA<br><b>Peso:</b> 60.4<br><b>Faturamento:</b> R$ 1266.0</div>`)[0];
+                popup_2ad93f38f5f5a8237e54636dbd90639b.setContent(html_422bc5fe6970ce5c2faa0847eff24fc0);
+            
+        
+
+        marker_016d246dc59e474ecc58a53155cf1a64.bindPopup(popup_2ad93f38f5f5a8237e54636dbd90639b)
+        ;
+
+        
+    
+    
+            marker_016d246dc59e474ecc58a53155cf1a64.bindTooltip(
+                `<div>
+                     3 - EXITO - PRQ POTIRA II (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_016d246dc59e474ecc58a53155cf1a64.setIcon(div_icon_494d2c2055f68e75af7f8eccd886928e);
+            
+    
+            var poly_line_7c925d7b05abdc777267f3d75e05eda4 = L.polyline(
+                [[-3.7688869, -38.6231497], [-3.767533, -38.6248232]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var marker_7c871292823bac083099c1b77e6ef75d = L.marker(
+                [-3.767533, -38.6248232],
+                {
+}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var div_icon_5aa2d928507776bd033c14b13d40206d = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:blue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e4\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_7c871292823bac083099c1b77e6ef75d.setIcon(div_icon_5aa2d928507776bd033c14b13d40206d);
+        
+    
+        var popup_7ed655b88590009c75c6527c94c1eef8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c60ce9c0bd63915f42685b2f31499f08 = $(`<div id="html_c60ce9c0bd63915f42685b2f31499f08" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4814<br><b>Ordem:</b> 4<br><b>Cliente:</b> EXITO - PRQ POTIRA III<br><b>Turno:</b> MANHA<br><b>Peso:</b> 14.5<br><b>Faturamento:</b> R$ 542.0</div>`)[0];
+                popup_7ed655b88590009c75c6527c94c1eef8.setContent(html_c60ce9c0bd63915f42685b2f31499f08);
+            
+        
+
+        marker_7c871292823bac083099c1b77e6ef75d.bindPopup(popup_7ed655b88590009c75c6527c94c1eef8)
+        ;
+
+        
+    
+    
+            marker_7c871292823bac083099c1b77e6ef75d.bindTooltip(
+                `<div>
+                     4 - EXITO - PRQ POTIRA III (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c871292823bac083099c1b77e6ef75d.setIcon(div_icon_5aa2d928507776bd033c14b13d40206d);
+            
+    
+            var poly_line_81832bec0ab5a0321071e9a4e9b55ed6 = L.polyline(
+                [[-3.767533, -38.6248232], [-3.758694, -38.625415]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var marker_7d937073be18b9cd1cf1fcf9912a5298 = L.marker(
+                [-3.758694, -38.625415],
+                {
+}
+            ).addTo(feature_group_44a89ec420a678cfd74f95ec2164d35e);
+        
+    
+            var div_icon_599e330694b787cdb9ddbe43ddf7fdb3 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:blue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e5\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_7d937073be18b9cd1cf1fcf9912a5298.setIcon(div_icon_599e330694b787cdb9ddbe43ddf7fdb3);
+        
+    
+        var popup_bec207b32c87c9bf74c426e5a1f5a93a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bcc482f7d1c85dca7d1d0a50b7064ec = $(`<div id="html_8bcc482f7d1c85dca7d1d0a50b7064ec" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNP4814<br><b>Ordem:</b> 5<br><b>Cliente:</b> EXITO - ACAPULCO<br><b>Turno:</b> MANHA<br><b>Peso:</b> 37.6<br><b>Faturamento:</b> R$ 846.0</div>`)[0];
+                popup_bec207b32c87c9bf74c426e5a1f5a93a.setContent(html_8bcc482f7d1c85dca7d1d0a50b7064ec);
+            
+        
+
+        marker_7d937073be18b9cd1cf1fcf9912a5298.bindPopup(popup_bec207b32c87c9bf74c426e5a1f5a93a)
+        ;
+
+        
+    
+    
+            marker_7d937073be18b9cd1cf1fcf9912a5298.bindTooltip(
+                `<div>
+                     5 - EXITO - ACAPULCO (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7d937073be18b9cd1cf1fcf9912a5298.setIcon(div_icon_599e330694b787cdb9ddbe43ddf7fdb3);
+            
+    
+            feature_group_44a89ec420a678cfd74f95ec2164d35e.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_ee176757d933e24a920b87f645b5790a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_a07b31379371785805219ac5fc185c00 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_ee176757d933e24a920b87f645b5790a);
+        
+    
+            var icon_cd58b1e7b7921cdbe0950c497f1721da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b801e94d29a606a80355516cd8a3ceb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df1335d67f9c57ea5f8f355121e52da5 = $(`<div id="html_df1335d67f9c57ea5f8f355121e52da5" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_6b801e94d29a606a80355516cd8a3ceb.setContent(html_df1335d67f9c57ea5f8f355121e52da5);
+            
+        
+
+        marker_a07b31379371785805219ac5fc185c00.bindPopup(popup_6b801e94d29a606a80355516cd8a3ceb)
+        ;
+
+        
+    
+    
+                marker_a07b31379371785805219ac5fc185c00.setIcon(icon_cd58b1e7b7921cdbe0950c497f1721da);
+            
+    
+            var poly_line_f199593b7e71bb7a9cbfa45706da66c5 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7929966, -38.5335303]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ee176757d933e24a920b87f645b5790a);
+        
+    
+            var marker_6f199797cd22a682e2b8cb9fb09970f0 = L.marker(
+                [-3.7929966, -38.5335303],
+                {
+}
+            ).addTo(feature_group_ee176757d933e24a920b87f645b5790a);
+        
+    
+            var div_icon_1dedac17548337bb2ce3fe4ab8dd42df = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:cadetblue;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_6f199797cd22a682e2b8cb9fb09970f0.setIcon(div_icon_1dedac17548337bb2ce3fe4ab8dd42df);
+        
+    
+        var popup_ad85eae863d941cae62ad3851bbabb1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1262bfb97bbae0aecee5ce4b3e93a1fc = $(`<div id="html_1262bfb97bbae0aecee5ce4b3e93a1fc" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>PNQ3270<br><b>Ordem:</b> 1<br><b>Cliente:</b> SUPER DO POVO - CD<br><b>Turno:</b> MANHA<br><b>Peso:</b> 539.2<br><b>Faturamento:</b> R$ 8465.44</div>`)[0];
+                popup_ad85eae863d941cae62ad3851bbabb1d.setContent(html_1262bfb97bbae0aecee5ce4b3e93a1fc);
+            
+        
+
+        marker_6f199797cd22a682e2b8cb9fb09970f0.bindPopup(popup_ad85eae863d941cae62ad3851bbabb1d)
+        ;
+
+        
+    
+    
+            marker_6f199797cd22a682e2b8cb9fb09970f0.bindTooltip(
+                `<div>
+                     1 - SUPER DO POVO - CD (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6f199797cd22a682e2b8cb9fb09970f0.setIcon(div_icon_1dedac17548337bb2ce3fe4ab8dd42df);
+            
+    
+            feature_group_ee176757d933e24a920b87f645b5790a.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_f86cd2a1a9d305157cb51049343c0463 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f0ec992ac5c5c3d3785dbd66e21d6956 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_f86cd2a1a9d305157cb51049343c0463);
+        
+    
+            var icon_a1d7dde57155a6d4bc0e97dd989816bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c43ea38c71d3a411ba2cc2d57d078c53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48d8668b0ccc41063db3d719624406ae = $(`<div id="html_48d8668b0ccc41063db3d719624406ae" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_c43ea38c71d3a411ba2cc2d57d078c53.setContent(html_48d8668b0ccc41063db3d719624406ae);
+            
+        
+
+        marker_f0ec992ac5c5c3d3785dbd66e21d6956.bindPopup(popup_c43ea38c71d3a411ba2cc2d57d078c53)
+        ;
+
+        
+    
+    
+                marker_f0ec992ac5c5c3d3785dbd66e21d6956.setIcon(icon_a1d7dde57155a6d4bc0e97dd989816bf);
+            
+    
+            var poly_line_c68a00db215282900570a3056d97a2e7 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.81528198, -38.55661271]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_f86cd2a1a9d305157cb51049343c0463);
+        
+    
+            var marker_ba898c98c475d842f2037a8fb7c6c3aa = L.marker(
+                [-3.81528198, -38.55661271],
+                {
+}
+            ).addTo(feature_group_f86cd2a1a9d305157cb51049343c0463);
+        
+    
+            var div_icon_bedeecf85621fe138c3f462a7a55d3f4 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:green;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_ba898c98c475d842f2037a8fb7c6c3aa.setIcon(div_icon_bedeecf85621fe138c3f462a7a55d3f4);
+        
+    
+        var popup_2c9129b84d215c5d6108ac58acbfe764 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2e38c83ddc7cde6022a45d237a3ccef = $(`<div id="html_a2e38c83ddc7cde6022a45d237a3ccef" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>POL9211<br><b>Ordem:</b> 1<br><b>Cliente:</b> SUPER LAGOA - CD<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 639.5<br><b>Faturamento:</b> R$ 13916.86</div>`)[0];
+                popup_2c9129b84d215c5d6108ac58acbfe764.setContent(html_a2e38c83ddc7cde6022a45d237a3ccef);
+            
+        
+
+        marker_ba898c98c475d842f2037a8fb7c6c3aa.bindPopup(popup_2c9129b84d215c5d6108ac58acbfe764)
+        ;
+
+        
+    
+    
+            marker_ba898c98c475d842f2037a8fb7c6c3aa.bindTooltip(
+                `<div>
+                     1 - SUPER LAGOA - CD (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba898c98c475d842f2037a8fb7c6c3aa.setIcon(div_icon_bedeecf85621fe138c3f462a7a55d3f4);
+            
+    
+            feature_group_f86cd2a1a9d305157cb51049343c0463.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var feature_group_959db2cb288eb5cab027237ae769def6 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ca482448ce12117caeea99f5f5c808c7 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var icon_c6405382f276401d2b52b5915929b682 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a018446cfdb6a1133f7208512f0d9d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e7ba1f75fe53b3baf54ba20f2d11d76 = $(`<div id="html_6e7ba1f75fe53b3baf54ba20f2d11d76" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_6a018446cfdb6a1133f7208512f0d9d9.setContent(html_6e7ba1f75fe53b3baf54ba20f2d11d76);
+            
+        
+
+        marker_ca482448ce12117caeea99f5f5c808c7.bindPopup(popup_6a018446cfdb6a1133f7208512f0d9d9)
+        ;
+
+        
+    
+    
+                marker_ca482448ce12117caeea99f5f5c808c7.setIcon(icon_c6405382f276401d2b52b5915929b682);
+            
+    
+            var poly_line_e7a5bd20c586258b63b2cbc3d95e98de = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7802372, -38.5784333]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_99eb51743e7c86bd1ce9831b0b2fdc9a = L.marker(
+                [-3.7802372, -38.5784333],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_876dc7bcd2dce4ef1d19b60f99ae264e = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e1\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_99eb51743e7c86bd1ce9831b0b2fdc9a.setIcon(div_icon_876dc7bcd2dce4ef1d19b60f99ae264e);
+        
+    
+        var popup_4c6e3295916a0f5ddb7684525fda143c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd3ad7f2b5d0a03bd12d1d54d78af710 = $(`<div id="html_cd3ad7f2b5d0a03bd12d1d54d78af710" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 1<br><b>Cliente:</b> SUPER PORTUGAL - VILA PERI<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 18.9<br><b>Faturamento:</b> R$ 647.8</div>`)[0];
+                popup_4c6e3295916a0f5ddb7684525fda143c.setContent(html_cd3ad7f2b5d0a03bd12d1d54d78af710);
+            
+        
+
+        marker_99eb51743e7c86bd1ce9831b0b2fdc9a.bindPopup(popup_4c6e3295916a0f5ddb7684525fda143c)
+        ;
+
+        
+    
+    
+            marker_99eb51743e7c86bd1ce9831b0b2fdc9a.bindTooltip(
+                `<div>
+                     1 - SUPER PORTUGAL - VILA PERI (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_99eb51743e7c86bd1ce9831b0b2fdc9a.setIcon(div_icon_876dc7bcd2dce4ef1d19b60f99ae264e);
+            
+    
+            var poly_line_1cf9212155e1c5546cdcce32f29ae2ef = L.polyline(
+                [[-3.7802372, -38.5784333], [-3.777836, -38.597821]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_32a29dd56d14c9868182b1fd77e46aa0 = L.marker(
+                [-3.777836, -38.597821],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_d301430aed58909d16c22ad4c9af54f2 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e2\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_32a29dd56d14c9868182b1fd77e46aa0.setIcon(div_icon_d301430aed58909d16c22ad4c9af54f2);
+        
+    
+        var popup_38031de42a2c4f980d4b88a6dd279490 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_812cdde5b51b34f58eca83ccaa7cabdf = $(`<div id="html_812cdde5b51b34f58eca83ccaa7cabdf" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 2<br><b>Cliente:</b> SUPER PORTUGAL - VITAL BRASIL<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 14.6<br><b>Faturamento:</b> R$ 448.8</div>`)[0];
+                popup_38031de42a2c4f980d4b88a6dd279490.setContent(html_812cdde5b51b34f58eca83ccaa7cabdf);
+            
+        
+
+        marker_32a29dd56d14c9868182b1fd77e46aa0.bindPopup(popup_38031de42a2c4f980d4b88a6dd279490)
+        ;
+
+        
+    
+    
+            marker_32a29dd56d14c9868182b1fd77e46aa0.bindTooltip(
+                `<div>
+                     2 - SUPER PORTUGAL - VITAL BRASIL (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32a29dd56d14c9868182b1fd77e46aa0.setIcon(div_icon_d301430aed58909d16c22ad4c9af54f2);
+            
+    
+            var poly_line_166afb8f406fe7a9c1f2dda9414a0b89 = L.polyline(
+                [[-3.777836, -38.597821], [-3.8143736, -38.6120921]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_fbcdb88e8278d45ec53656e43ec1316e = L.marker(
+                [-3.8143736, -38.6120921],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_09424dacddace49fd55f491a05a18d4b = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e3\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_fbcdb88e8278d45ec53656e43ec1316e.setIcon(div_icon_09424dacddace49fd55f491a05a18d4b);
+        
+    
+        var popup_86729f059e209b6737aeca7c3b04a279 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f9382d84b09a07d9f0ef73ca4f1bc97 = $(`<div id="html_5f9382d84b09a07d9f0ef73ca4f1bc97" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 3<br><b>Cliente:</b> BARATAO - SIQUEIRA<br><b>Turno:</b> MANHA<br><b>Peso:</b> 19.0<br><b>Faturamento:</b> R$ 609.28</div>`)[0];
+                popup_86729f059e209b6737aeca7c3b04a279.setContent(html_5f9382d84b09a07d9f0ef73ca4f1bc97);
+            
+        
+
+        marker_fbcdb88e8278d45ec53656e43ec1316e.bindPopup(popup_86729f059e209b6737aeca7c3b04a279)
+        ;
+
+        
+    
+    
+            marker_fbcdb88e8278d45ec53656e43ec1316e.bindTooltip(
+                `<div>
+                     3 - BARATAO - SIQUEIRA (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fbcdb88e8278d45ec53656e43ec1316e.setIcon(div_icon_09424dacddace49fd55f491a05a18d4b);
+            
+    
+            var poly_line_23b06df274d3c96f1a3a2d5ac79d305d = L.polyline(
+                [[-3.8143736, -38.6120921], [-3.817788, -38.589921]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_78adf9759ea4a553acf4699e8edec228 = L.marker(
+                [-3.817788, -38.589921],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_ca9c507c27e04cf9115f66c32d04de17 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e4\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_78adf9759ea4a553acf4699e8edec228.setIcon(div_icon_ca9c507c27e04cf9115f66c32d04de17);
+        
+    
+        var popup_170e26f09c1aa2b8017b6d7b21c20a60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0627c41015a25298e9e7be44a3aa9bf = $(`<div id="html_d0627c41015a25298e9e7be44a3aa9bf" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 4<br><b>Cliente:</b> BARATAO - CONJ ESPERANÇA<br><b>Turno:</b> MANHA<br><b>Peso:</b> 106.3<br><b>Faturamento:</b> R$ 3122.08</div>`)[0];
+                popup_170e26f09c1aa2b8017b6d7b21c20a60.setContent(html_d0627c41015a25298e9e7be44a3aa9bf);
+            
+        
+
+        marker_78adf9759ea4a553acf4699e8edec228.bindPopup(popup_170e26f09c1aa2b8017b6d7b21c20a60)
+        ;
+
+        
+    
+    
+            marker_78adf9759ea4a553acf4699e8edec228.bindTooltip(
+                `<div>
+                     4 - BARATAO - CONJ ESPERANÇA (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78adf9759ea4a553acf4699e8edec228.setIcon(div_icon_ca9c507c27e04cf9115f66c32d04de17);
+            
+    
+            var poly_line_89663560cbb6ad0ce218a4ab6a3d61bb = L.polyline(
+                [[-3.817788, -38.589921], [-3.86330658, -38.58178138]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_01387b9a78716b493a148a30d1927a52 = L.marker(
+                [-3.86330658, -38.58178138],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_c802d316f8f72e04fd5cba137ba14697 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e5\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_01387b9a78716b493a148a30d1927a52.setIcon(div_icon_c802d316f8f72e04fd5cba137ba14697);
+        
+    
+        var popup_342e2d0bb733f20469df12a38578f2f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ef9be85dab36b51c1cc00ed638e8d84 = $(`<div id="html_3ef9be85dab36b51c1cc00ed638e8d84" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 5<br><b>Cliente:</b> BARATAO - PAJUCARA<br><b>Turno:</b> MANHA<br><b>Peso:</b> 44.3<br><b>Faturamento:</b> R$ 1226.78</div>`)[0];
+                popup_342e2d0bb733f20469df12a38578f2f5.setContent(html_3ef9be85dab36b51c1cc00ed638e8d84);
+            
+        
+
+        marker_01387b9a78716b493a148a30d1927a52.bindPopup(popup_342e2d0bb733f20469df12a38578f2f5)
+        ;
+
+        
+    
+    
+            marker_01387b9a78716b493a148a30d1927a52.bindTooltip(
+                `<div>
+                     5 - BARATAO - PAJUCARA (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_01387b9a78716b493a148a30d1927a52.setIcon(div_icon_c802d316f8f72e04fd5cba137ba14697);
+            
+    
+            var poly_line_0093fcb493e2ebdb2a5930fbfe57ac79 = L.polyline(
+                [[-3.86330658, -38.58178138], [-3.7872948, -38.5439698]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_a43c08187404b6ffbdd645de311d738c = L.marker(
+                [-3.7872948, -38.5439698],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_cb9967811e9ece37612156cdba9cd7e0 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e6\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_a43c08187404b6ffbdd645de311d738c.setIcon(div_icon_cb9967811e9ece37612156cdba9cd7e0);
+        
+    
+        var popup_4c75e072663dbb328fca2b396f505b5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ef4ec03615f901193f8157833241e51 = $(`<div id="html_8ef4ec03615f901193f8157833241e51" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 6<br><b>Cliente:</b> SUPER PORTUGAL - SERRINHA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 15.7<br><b>Faturamento:</b> R$ 530.8</div>`)[0];
+                popup_4c75e072663dbb328fca2b396f505b5f.setContent(html_8ef4ec03615f901193f8157833241e51);
+            
+        
+
+        marker_a43c08187404b6ffbdd645de311d738c.bindPopup(popup_4c75e072663dbb328fca2b396f505b5f)
+        ;
+
+        
+    
+    
+            marker_a43c08187404b6ffbdd645de311d738c.bindTooltip(
+                `<div>
+                     6 - SUPER PORTUGAL - SERRINHA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a43c08187404b6ffbdd645de311d738c.setIcon(div_icon_cb9967811e9ece37612156cdba9cd7e0);
+            
+    
+            var poly_line_3cf0dab3f66604e5323d17c1885ed702 = L.polyline(
+                [[-3.7872948, -38.5439698], [-3.7899059, -38.495258]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_19580c338f83b60ca4de4bad523869ef = L.marker(
+                [-3.7899059, -38.495258],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_3a70a5705a6316f4ae736a2add0414d5 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e7\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_19580c338f83b60ca4de4bad523869ef.setIcon(div_icon_3a70a5705a6316f4ae736a2add0414d5);
+        
+    
+        var popup_ac45ec5b559d4b86951f295cc1c7257c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac963d6e9b6e8fd6aeca2c14a6979229 = $(`<div id="html_ac963d6e9b6e8fd6aeca2c14a6979229" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 7<br><b>Cliente:</b> SUPER PORTUGAL - CIDADE DOS FUNC<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 60.9<br><b>Faturamento:</b> R$ 2101.0</div>`)[0];
+                popup_ac45ec5b559d4b86951f295cc1c7257c.setContent(html_ac963d6e9b6e8fd6aeca2c14a6979229);
+            
+        
+
+        marker_19580c338f83b60ca4de4bad523869ef.bindPopup(popup_ac45ec5b559d4b86951f295cc1c7257c)
+        ;
+
+        
+    
+    
+            marker_19580c338f83b60ca4de4bad523869ef.bindTooltip(
+                `<div>
+                     7 - SUPER PORTUGAL - CIDADE DOS FUNC (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19580c338f83b60ca4de4bad523869ef.setIcon(div_icon_3a70a5705a6316f4ae736a2add0414d5);
+            
+    
+            var poly_line_e3f4946159fc44cb1b2728c1279ad4ba = L.polyline(
+                [[-3.7899059, -38.495258], [-3.79508034, -38.47443215]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_a776aa80f79e73be701717d3df238dd1 = L.marker(
+                [-3.79508034, -38.47443215],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_19994047170d7301a3d045ab0b9526c0 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e8\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_a776aa80f79e73be701717d3df238dd1.setIcon(div_icon_19994047170d7301a3d045ab0b9526c0);
+        
+    
+        var popup_5c34e261199bbed4e3305b78b68c4497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e396200d3b5fb3639870bc00f89157f = $(`<div id="html_7e396200d3b5fb3639870bc00f89157f" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 8<br><b>Cliente:</b> SUPER PORTUGAL- SAPIRANGA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 78.8<br><b>Faturamento:</b> R$ 2885.8</div>`)[0];
+                popup_5c34e261199bbed4e3305b78b68c4497.setContent(html_7e396200d3b5fb3639870bc00f89157f);
+            
+        
+
+        marker_a776aa80f79e73be701717d3df238dd1.bindPopup(popup_5c34e261199bbed4e3305b78b68c4497)
+        ;
+
+        
+    
+    
+            marker_a776aa80f79e73be701717d3df238dd1.bindTooltip(
+                `<div>
+                     8 - SUPER PORTUGAL- SAPIRANGA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a776aa80f79e73be701717d3df238dd1.setIcon(div_icon_19994047170d7301a3d045ab0b9526c0);
+            
+    
+            var poly_line_38c099e1fb914c10937a35226661a4ca = L.polyline(
+                [[-3.79508034, -38.47443215], [-3.7967961, -38.46483618]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_48b02ca3eb93a5d86c67ce1740a64564 = L.marker(
+                [-3.7967961, -38.46483618],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_37789e1d3e902c0cb765210bd2193a1f = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e9\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_48b02ca3eb93a5d86c67ce1740a64564.setIcon(div_icon_37789e1d3e902c0cb765210bd2193a1f);
+        
+    
+        var popup_22897add223803342c28854c43c5f8cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6f91f9fcfdac4043f1111bb3cfa9a02 = $(`<div id="html_c6f91f9fcfdac4043f1111bb3cfa9a02" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 9<br><b>Cliente:</b> MERCADINHO DA APARECIDA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 22.9<br><b>Faturamento:</b> R$ 226.8</div>`)[0];
+                popup_22897add223803342c28854c43c5f8cd.setContent(html_c6f91f9fcfdac4043f1111bb3cfa9a02);
+            
+        
+
+        marker_48b02ca3eb93a5d86c67ce1740a64564.bindPopup(popup_22897add223803342c28854c43c5f8cd)
+        ;
+
+        
+    
+    
+            marker_48b02ca3eb93a5d86c67ce1740a64564.bindTooltip(
+                `<div>
+                     9 - MERCADINHO DA APARECIDA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48b02ca3eb93a5d86c67ce1740a64564.setIcon(div_icon_37789e1d3e902c0cb765210bd2193a1f);
+            
+    
+            var poly_line_0887411cdc4829ce740ea3d17f159e9c = L.polyline(
+                [[-3.7967961, -38.46483618], [-3.7881406, -38.4676257]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_e30036cc54c47ffe18df4d1d76150400 = L.marker(
+                [-3.7881406, -38.4676257],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_4948ab418577b5ebc6e43c3182341da0 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e10\u003c/span\u003e\u003cspan\u003e\ud83c\udf24\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_e30036cc54c47ffe18df4d1d76150400.setIcon(div_icon_4948ab418577b5ebc6e43c3182341da0);
+        
+    
+        var popup_24524f65f28440ce21eca561c1f4059c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a02da172a28149b40beae2537e22e56d = $(`<div id="html_a02da172a28149b40beae2537e22e56d" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 10<br><b>Cliente:</b> PANATTERIA J P LTDA<br><b>Turno:</b> DIURNO<br><b>Peso:</b> 4.8<br><b>Faturamento:</b> R$ 165.6</div>`)[0];
+                popup_24524f65f28440ce21eca561c1f4059c.setContent(html_a02da172a28149b40beae2537e22e56d);
+            
+        
+
+        marker_e30036cc54c47ffe18df4d1d76150400.bindPopup(popup_24524f65f28440ce21eca561c1f4059c)
+        ;
+
+        
+    
+    
+            marker_e30036cc54c47ffe18df4d1d76150400.bindTooltip(
+                `<div>
+                     10 - PANATTERIA J P LTDA (DIURNO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e30036cc54c47ffe18df4d1d76150400.setIcon(div_icon_4948ab418577b5ebc6e43c3182341da0);
+            
+    
+            var poly_line_b8e6c304181139018c6d66e312794b11 = L.polyline(
+                [[-3.7881406, -38.4676257], [-3.7086442, -38.563186]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var marker_7eeb1293448e32aa626568ddda8d59a5 = L.marker(
+                [-3.7086442, -38.563186],
+                {
+}
+            ).addTo(feature_group_959db2cb288eb5cab027237ae769def6);
+        
+    
+            var div_icon_1c35776880d0dd62852ad3b1e594c060 = L.divIcon({
+  "html": "\u003cdiv style=\u0027width:34px; height:34px; background:purple;border-radius:50%; display:flex; align-items:center; justify-content:center;flex-direction:column; color:white; font-size:12px;\u0027\u003e\u003cspan style=\u0027font-weight:bold;\u0027\u003e11\u003c/span\u003e\u003cspan\u003e\u2600\ufe0f\u003c/span\u003e\u003c/div\u003e",
+  "className": "empty",
+});
+            marker_7eeb1293448e32aa626568ddda8d59a5.setIcon(div_icon_1c35776880d0dd62852ad3b1e594c060);
+        
+    
+        var popup_7bd203b9f6ab13e6a1b9a16daeff3b2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee0179819249031d72271216aee8a37b = $(`<div id="html_ee0179819249031d72271216aee8a37b" style="width: 100.0%; height: 100.0%;"><b>Placa:</b>RIG8G48<br><b>Ordem:</b> 11<br><b>Cliente:</b> BARATAO - ALVARO WEYNE<br><b>Turno:</b> MANHA<br><b>Peso:</b> 59.0<br><b>Faturamento:</b> R$ 1710.0</div>`)[0];
+                popup_7bd203b9f6ab13e6a1b9a16daeff3b2d.setContent(html_ee0179819249031d72271216aee8a37b);
+            
+        
+
+        marker_7eeb1293448e32aa626568ddda8d59a5.bindPopup(popup_7bd203b9f6ab13e6a1b9a16daeff3b2d)
+        ;
+
+        
+    
+    
+            marker_7eeb1293448e32aa626568ddda8d59a5.bindTooltip(
+                `<div>
+                     11 - BARATAO - ALVARO WEYNE (MANHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7eeb1293448e32aa626568ddda8d59a5.setIcon(div_icon_1c35776880d0dd62852ad3b1e594c060);
+            
+    
+            feature_group_959db2cb288eb5cab027237ae769def6.addTo(map_63880d14d81890939626da470d6c9390);
+        
+    
+            var layer_control_974fb05ae4ebd1d23065d3d5ac608f17_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_377981ab274312340571ba44f3983396,
+                },
+                overlays :  {
+                    "Caminh\u00e3o: HYQ9905" : feature_group_8fd6f218919ac2889c967fb5e7f0faaf,
+                    "Caminh\u00e3o: OCB9225" : feature_group_747ca75d03f301eb65eb787377869885,
+                    "Caminh\u00e3o: OSH4598" : feature_group_77380b5fd026e1e42f6a68f0c95211b7,
+                    "Caminh\u00e3o: PNP4654" : feature_group_b6ddb94de64ecff30cae27a7a6bde8d6,
+                    "Caminh\u00e3o: PNP4814" : feature_group_44a89ec420a678cfd74f95ec2164d35e,
+                    "Caminh\u00e3o: PNQ3270" : feature_group_ee176757d933e24a920b87f645b5790a,
+                    "Caminh\u00e3o: POL9211" : feature_group_f86cd2a1a9d305157cb51049343c0463,
+                    "Caminh\u00e3o: RIG8G48" : feature_group_959db2cb288eb5cab027237ae769def6,
+                },
+            };
+            let layer_control_974fb05ae4ebd1d23065d3d5ac608f17 = L.control.layers(
+                layer_control_974fb05ae4ebd1d23065d3d5ac608f17_layers.base_layers,
+                layer_control_974fb05ae4ebd1d23065d3d5ac608f17_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_63880d14d81890939626da470d6c9390);
+
+        
+</script>
+</html>

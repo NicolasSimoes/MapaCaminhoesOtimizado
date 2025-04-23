@@ -1,0 +1,2871 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31ea89c804506549f384650a7aaa964d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position:fixed; bottom:50px; left:50px; width:300px; background:white; border:2px solid grey; z-index:9999; padding:10px; box-shadow:2px 2px 5px rgba(0,0,0,0.3)">
+    <b>🏬 Clientes totais:</b> 46<br>
+    <b>💰 Faturamento Total:</b> R$ 92159.28<br>
+    <b>🔄 Atualizado:</b> 23/04/2025<br><br>
+    <b>HYQ9905</b>: R$ 23867.27 / Uso: 25%<br><b>OCB9225</b>: R$ 10038.22 / Uso: 36%<br><b>OSH4598</b>: R$ 12233.39 / Uso: 37%<br><b>PNP4654</b>: R$ 6689.06 / Uso: 30%<br><b>PNP4814</b>: R$ 3274.30 / Uso: 8%<br><b>PNQ3270</b>: R$ 8465.44 / Uso: 60%<br><b>POL9211</b>: R$ 13916.86 / Uso: 7%<br><b>RIG8G48</b>: R$ 13674.74 / Uso: 28%<br></div>
+    
+            <div class="folium-map" id="map_31ea89c804506549f384650a7aaa964d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_31ea89c804506549f384650a7aaa964d = L.map(
+                "map_31ea89c804506549f384650a7aaa964d",
+                {
+                    center: [-3.8666699, -38.5773332],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_41ff7581cdb5bc8eb684401ef5dade9c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_41ff7581cdb5bc8eb684401ef5dade9c.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_cf080d14046706a34051666144c31c48 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cbd51f5dcac30e43d1297f8e2af116bf = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_3a5a9749b34c56e3f33793431c26a76f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccb12e28326271c31d4e0adbe05ea53c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4bc193fdbbdde58bb9291d34b0e834f = $(`<div id="html_d4bc193fdbbdde58bb9291d34b0e834f" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_ccb12e28326271c31d4e0adbe05ea53c.setContent(html_d4bc193fdbbdde58bb9291d34b0e834f);
+            
+        
+
+        marker_cbd51f5dcac30e43d1297f8e2af116bf.bindPopup(popup_ccb12e28326271c31d4e0adbe05ea53c)
+        ;
+
+        
+    
+    
+                marker_cbd51f5dcac30e43d1297f8e2af116bf.setIcon(icon_3a5a9749b34c56e3f33793431c26a76f);
+            
+    
+            var poly_line_edea51fea763ba9721a2e1db3b441675 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7570117, -38.5530651]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_048076fc3541565ad40f0a476b48d19e = L.marker(
+                [-3.7570117, -38.5530651],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_966d48298dd33378959d86a3085a5539 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ce51caae2152c94235569fb7177b8c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9664f518390117b503d03602916ef5cd = $(`<div id="html_9664f518390117b503d03602916ef5cd" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (JOAO PESSOA)<br><b>Peso:</b> 168.7<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 3381.5</div>`)[0];
+                popup_3ce51caae2152c94235569fb7177b8c8.setContent(html_9664f518390117b503d03602916ef5cd);
+            
+        
+
+        marker_048076fc3541565ad40f0a476b48d19e.bindPopup(popup_3ce51caae2152c94235569fb7177b8c8)
+        ;
+
+        
+    
+    
+            marker_048076fc3541565ad40f0a476b48d19e.bindTooltip(
+                `<div>
+                     COMETA (JOAO PESSOA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_048076fc3541565ad40f0a476b48d19e.setIcon(icon_966d48298dd33378959d86a3085a5539);
+            
+    
+            var poly_line_0166fded237d2de9dade416930b92853 = L.polyline(
+                [[-3.7570117, -38.5530651], [-3.7495749, -38.5285489]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_9a4f9ae3546a1dffe17bd0bbfb722af5 = L.marker(
+                [-3.7495749, -38.5285489],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_74060c002876dc363f09de42e29c2ee1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46897c6bb42fd6cd1575386e97cb22e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bebfe870b2f2e622a50cb6b379649c8e = $(`<div id="html_bebfe870b2f2e622a50cb6b379649c8e" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (TREZE DE MAIO)<br><b>Peso:</b> 112.0<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2578.26</div>`)[0];
+                popup_46897c6bb42fd6cd1575386e97cb22e3.setContent(html_bebfe870b2f2e622a50cb6b379649c8e);
+            
+        
+
+        marker_9a4f9ae3546a1dffe17bd0bbfb722af5.bindPopup(popup_46897c6bb42fd6cd1575386e97cb22e3)
+        ;
+
+        
+    
+    
+            marker_9a4f9ae3546a1dffe17bd0bbfb722af5.bindTooltip(
+                `<div>
+                     COMETA (TREZE DE MAIO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a4f9ae3546a1dffe17bd0bbfb722af5.setIcon(icon_74060c002876dc363f09de42e29c2ee1);
+            
+    
+            var poly_line_c855bc68bea5f6bbda6b6ed19b84cac3 = L.polyline(
+                [[-3.7495749, -38.5285489], [-3.7532492, -38.5276962]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_53471e6fdf31097fe6b5b213f0f4f09a = L.marker(
+                [-3.7532492, -38.5276962],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_64c9d76edcc77ba4bafbe699152036b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a766d55f0272ed20ccd729f9b128187 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12ef8e2b2ae2cc2379f98d0adc353772 = $(`<div id="html_12ef8e2b2ae2cc2379f98d0adc353772" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (FATIMA)<br><b>Peso:</b> 77.0<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 1731.54</div>`)[0];
+                popup_1a766d55f0272ed20ccd729f9b128187.setContent(html_12ef8e2b2ae2cc2379f98d0adc353772);
+            
+        
+
+        marker_53471e6fdf31097fe6b5b213f0f4f09a.bindPopup(popup_1a766d55f0272ed20ccd729f9b128187)
+        ;
+
+        
+    
+    
+            marker_53471e6fdf31097fe6b5b213f0f4f09a.bindTooltip(
+                `<div>
+                     COMETA (FATIMA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_53471e6fdf31097fe6b5b213f0f4f09a.setIcon(icon_64c9d76edcc77ba4bafbe699152036b6);
+            
+    
+            var poly_line_d3df44eca8e2cf6ef114e869183c2597 = L.polyline(
+                [[-3.7532492, -38.5276962], [-3.7955137, -38.4901664]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_1da6298fee3c80e529913983467ff5d9 = L.marker(
+                [-3.7955137, -38.4901664],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_fdb5b69603fca1a3e55f8eab58c33211 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_388f5e5c85d753124b9f758946f45d12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fdcf46a3f833fe4cd456bace68dce67 = $(`<div id="html_7fdcf46a3f833fe4cd456bace68dce67" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (OLIVEIRA PAIVA)<br><b>Peso:</b> 64.6<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 1588.5</div>`)[0];
+                popup_388f5e5c85d753124b9f758946f45d12.setContent(html_7fdcf46a3f833fe4cd456bace68dce67);
+            
+        
+
+        marker_1da6298fee3c80e529913983467ff5d9.bindPopup(popup_388f5e5c85d753124b9f758946f45d12)
+        ;
+
+        
+    
+    
+            marker_1da6298fee3c80e529913983467ff5d9.bindTooltip(
+                `<div>
+                     COMETA (OLIVEIRA PAIVA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1da6298fee3c80e529913983467ff5d9.setIcon(icon_fdb5b69603fca1a3e55f8eab58c33211);
+            
+    
+            var poly_line_22f819d04aeaf6af38ed824a4a13f26e = L.polyline(
+                [[-3.7955137, -38.4901664], [-3.7888981, -38.4759777]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_2d9e8a6e7312d1209719cbb461a4dff9 = L.marker(
+                [-3.7888981, -38.4759777],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_c792bd87a4cd2894c6dafd30f6358cd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb3a621af852af33995dea6c71533b2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_732c9ce5f4ba5fb9a8e0d077ffe26146 = $(`<div id="html_732c9ce5f4ba5fb9a8e0d077ffe26146" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (ED BR SOARES)<br><b>Peso:</b> 124.9<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2476.87</div>`)[0];
+                popup_bb3a621af852af33995dea6c71533b2a.setContent(html_732c9ce5f4ba5fb9a8e0d077ffe26146);
+            
+        
+
+        marker_2d9e8a6e7312d1209719cbb461a4dff9.bindPopup(popup_bb3a621af852af33995dea6c71533b2a)
+        ;
+
+        
+    
+    
+            marker_2d9e8a6e7312d1209719cbb461a4dff9.bindTooltip(
+                `<div>
+                     COMETA (ED BR SOARES)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d9e8a6e7312d1209719cbb461a4dff9.setIcon(icon_c792bd87a4cd2894c6dafd30f6358cd3);
+            
+    
+            var poly_line_a3979c4cec88bee76b70df46d52207de = L.polyline(
+                [[-3.7888981, -38.4759777], [-3.8194224, -38.4817816]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_2d9d73dd5b447949ad523e4a23d86c47 = L.marker(
+                [-3.8194224, -38.4817816],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_09a355043b84ffea017af5d85c0606dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c522dab319f29dde1eeda66f0c27a38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80f9d846b7e13395ff311fdb8fdb57f3 = $(`<div id="html_80f9d846b7e13395ff311fdb8fdb57f3" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (MESSEJANA)<br><b>Peso:</b> 134.7<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2117.18</div>`)[0];
+                popup_6c522dab319f29dde1eeda66f0c27a38.setContent(html_80f9d846b7e13395ff311fdb8fdb57f3);
+            
+        
+
+        marker_2d9d73dd5b447949ad523e4a23d86c47.bindPopup(popup_6c522dab319f29dde1eeda66f0c27a38)
+        ;
+
+        
+    
+    
+            marker_2d9d73dd5b447949ad523e4a23d86c47.bindTooltip(
+                `<div>
+                     COMETA (MESSEJANA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d9d73dd5b447949ad523e4a23d86c47.setIcon(icon_09a355043b84ffea017af5d85c0606dd);
+            
+    
+            var poly_line_39aafbabb81bdb79222b2b1f3e6e070f = L.polyline(
+                [[-3.8194224, -38.4817816], [-3.8795207, -38.4613795]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_294fe7bf5bccc4c21dcb3d9dfd1492c4 = L.marker(
+                [-3.8795207, -38.4613795],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_71c746a9e3738841f944fb33dc49d586 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3440cd86a3f2dc1ca33dec6a10f3a63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dbb52a23566a913282196d3bcdb7056 = $(`<div id="html_0dbb52a23566a913282196d3bcdb7056" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (EUSEBIO)<br><b>Peso:</b> 182.0<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 3568.69</div>`)[0];
+                popup_b3440cd86a3f2dc1ca33dec6a10f3a63.setContent(html_0dbb52a23566a913282196d3bcdb7056);
+            
+        
+
+        marker_294fe7bf5bccc4c21dcb3d9dfd1492c4.bindPopup(popup_b3440cd86a3f2dc1ca33dec6a10f3a63)
+        ;
+
+        
+    
+    
+            marker_294fe7bf5bccc4c21dcb3d9dfd1492c4.bindTooltip(
+                `<div>
+                     COMETA (EUSEBIO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_294fe7bf5bccc4c21dcb3d9dfd1492c4.setIcon(icon_71c746a9e3738841f944fb33dc49d586);
+            
+    
+            var poly_line_f7e077d4df08c55213defb89edfc3755 = L.polyline(
+                [[-3.8795207, -38.4613795], [-3.8301305, -38.4875383]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_971904a939d3ed6cc11ded39942e7587 = L.marker(
+                [-3.8301305, -38.4875383],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_df84e39f6c38593298639fd19129906b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6831c1109fe05d048b53b56cbc6ea1dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b623a767a4aef1e1e357c6c6ee385ae2 = $(`<div id="html_b623a767a4aef1e1e357c6c6ee385ae2" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (JOAQUIM FELICIO)<br><b>Peso:</b> 204.6<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 3788.99</div>`)[0];
+                popup_6831c1109fe05d048b53b56cbc6ea1dc.setContent(html_b623a767a4aef1e1e357c6c6ee385ae2);
+            
+        
+
+        marker_971904a939d3ed6cc11ded39942e7587.bindPopup(popup_6831c1109fe05d048b53b56cbc6ea1dc)
+        ;
+
+        
+    
+    
+            marker_971904a939d3ed6cc11ded39942e7587.bindTooltip(
+                `<div>
+                     COMETA (JOAQUIM FELICIO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_971904a939d3ed6cc11ded39942e7587.setIcon(icon_df84e39f6c38593298639fd19129906b);
+            
+    
+            var poly_line_da2bfaa6504060a850d63aaaf101f51c = L.polyline(
+                [[-3.8301305, -38.4875383], [-3.782635, -38.5538401]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var marker_70321e5a585fa8170ec08398b44bc1f1 = L.marker(
+                [-3.782635, -38.5538401],
+                {
+}
+            ).addTo(feature_group_cf080d14046706a34051666144c31c48);
+        
+    
+            var icon_7036861c5272591609088fb80b201067 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_927b58ea0f622a02d36133bdb980552a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f31468bf35689d78bf7b2e8822fb538 = $(`<div id="html_0f31468bf35689d78bf7b2e8822fb538" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> HYQ9905<br><b>Cliente:</b> COMETA (JOAO CARLOS)<br><b>Peso:</b> 155.6<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2635.74</div>`)[0];
+                popup_927b58ea0f622a02d36133bdb980552a.setContent(html_0f31468bf35689d78bf7b2e8822fb538);
+            
+        
+
+        marker_70321e5a585fa8170ec08398b44bc1f1.bindPopup(popup_927b58ea0f622a02d36133bdb980552a)
+        ;
+
+        
+    
+    
+            marker_70321e5a585fa8170ec08398b44bc1f1.bindTooltip(
+                `<div>
+                     COMETA (JOAO CARLOS)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70321e5a585fa8170ec08398b44bc1f1.setIcon(icon_7036861c5272591609088fb80b201067);
+            
+    
+            feature_group_cf080d14046706a34051666144c31c48.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_b52c8b7203e05ca8879e12d04ec5fe03 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7178f249d983ef5fd335d86d4a8e14d3 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_1f020f454e2b12579572bd204ff689e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef6e4474bd6eb2b5f920a7498e8815cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_379b3dbdc02b7c65ac84f91e697be22f = $(`<div id="html_379b3dbdc02b7c65ac84f91e697be22f" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_ef6e4474bd6eb2b5f920a7498e8815cd.setContent(html_379b3dbdc02b7c65ac84f91e697be22f);
+            
+        
+
+        marker_7178f249d983ef5fd335d86d4a8e14d3.bindPopup(popup_ef6e4474bd6eb2b5f920a7498e8815cd)
+        ;
+
+        
+    
+    
+                marker_7178f249d983ef5fd335d86d4a8e14d3.setIcon(icon_1f020f454e2b12579572bd204ff689e6);
+            
+    
+            var poly_line_b3caeca7403169f3c24b4376b5e5525f = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7779625, -38.5519438]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var marker_3c383681ff2daf80a16e792cd9070923 = L.marker(
+                [-3.7779625, -38.5519438],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_aa8f141cd84680d794a9d7d96e6d5316 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9a4b3754d205d16ad069048bdfc6284 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5e3000aa9b5ee268f6af2251d1848d5 = $(`<div id="html_b5e3000aa9b5ee268f6af2251d1848d5" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OCB9225<br><b>Cliente:</b> SUPER SAO JOSE<br><b>Peso:</b> 37.2<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 170.4</div>`)[0];
+                popup_f9a4b3754d205d16ad069048bdfc6284.setContent(html_b5e3000aa9b5ee268f6af2251d1848d5);
+            
+        
+
+        marker_3c383681ff2daf80a16e792cd9070923.bindPopup(popup_f9a4b3754d205d16ad069048bdfc6284)
+        ;
+
+        
+    
+    
+            marker_3c383681ff2daf80a16e792cd9070923.bindTooltip(
+                `<div>
+                     SUPER SAO JOSE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c383681ff2daf80a16e792cd9070923.setIcon(icon_aa8f141cd84680d794a9d7d96e6d5316);
+            
+    
+            var poly_line_7f1e8553b2faf5745f25d454cc1fb08b = L.polyline(
+                [[-3.7779625, -38.5519438], [-3.7374817, -38.5204755]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var marker_baad06f5f1c39553534be9d3d16c33f2 = L.marker(
+                [-3.7374817, -38.5204755],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_f271da277bdedc71a37485e02b60f2ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_571c72b5333e4ff08dfe939ffdde6070 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b5c916f605f359b05d967ccc5ad19fb = $(`<div id="html_2b5c916f605f359b05d967ccc5ad19fb" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OCB9225<br><b>Cliente:</b> COMETA (J DA PENHA)<br><b>Peso:</b> 160.1<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 3142.99</div>`)[0];
+                popup_571c72b5333e4ff08dfe939ffdde6070.setContent(html_2b5c916f605f359b05d967ccc5ad19fb);
+            
+        
+
+        marker_baad06f5f1c39553534be9d3d16c33f2.bindPopup(popup_571c72b5333e4ff08dfe939ffdde6070)
+        ;
+
+        
+    
+    
+            marker_baad06f5f1c39553534be9d3d16c33f2.bindTooltip(
+                `<div>
+                     COMETA (J DA PENHA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_baad06f5f1c39553534be9d3d16c33f2.setIcon(icon_f271da277bdedc71a37485e02b60f2ed);
+            
+    
+            var poly_line_97306becfcb926d97233dbbe2c3ec537 = L.polyline(
+                [[-3.7374817, -38.5204755], [-3.73996838, -38.53237147]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var marker_db48674127b36df8cce6f98a7c1ca13a = L.marker(
+                [-3.73996838, -38.53237147],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_2e8708a0a2e128b8284c548338ce5a04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3dbf504fb62fd3b16ac71dc6d3b05f29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c991c6923003d5abb29bf732a501a246 = $(`<div id="html_c991c6923003d5abb29bf732a501a246" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OCB9225<br><b>Cliente:</b> COMETA (BARAO DO RIO BRANCO)<br><b>Peso:</b> 144.3<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 3133.59</div>`)[0];
+                popup_3dbf504fb62fd3b16ac71dc6d3b05f29.setContent(html_c991c6923003d5abb29bf732a501a246);
+            
+        
+
+        marker_db48674127b36df8cce6f98a7c1ca13a.bindPopup(popup_3dbf504fb62fd3b16ac71dc6d3b05f29)
+        ;
+
+        
+    
+    
+            marker_db48674127b36df8cce6f98a7c1ca13a.bindTooltip(
+                `<div>
+                     COMETA (BARAO DO RIO BRANCO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db48674127b36df8cce6f98a7c1ca13a.setIcon(icon_2e8708a0a2e128b8284c548338ce5a04);
+            
+    
+            var poly_line_82f22692f86702672d23aedfb20db00b = L.polyline(
+                [[-3.73996838, -38.53237147], [-3.73839532, -38.53222215]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var marker_9ff607a583eceab157cb5b1aa11480fe = L.marker(
+                [-3.73839532, -38.53222215],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_5aa439465312faba60efd2bb8a75bb18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f7b68385b8ab8a5b440a1cc746b0d84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9518c9c4982027556a3d4a2a93d8b51a = $(`<div id="html_9518c9c4982027556a3d4a2a93d8b51a" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OCB9225<br><b>Cliente:</b> SUPER GENTILANDIA- JOSE BONIFACIO<br><b>Peso:</b> 22.3<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 483.8</div>`)[0];
+                popup_1f7b68385b8ab8a5b440a1cc746b0d84.setContent(html_9518c9c4982027556a3d4a2a93d8b51a);
+            
+        
+
+        marker_9ff607a583eceab157cb5b1aa11480fe.bindPopup(popup_1f7b68385b8ab8a5b440a1cc746b0d84)
+        ;
+
+        
+    
+    
+            marker_9ff607a583eceab157cb5b1aa11480fe.bindTooltip(
+                `<div>
+                     SUPER GENTILANDIA- JOSE BONIFACIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ff607a583eceab157cb5b1aa11480fe.setIcon(icon_5aa439465312faba60efd2bb8a75bb18);
+            
+    
+            var poly_line_58f5f77b54678444ddd61e46ee45e292 = L.polyline(
+                [[-3.73839532, -38.53222215], [-3.7309369, -38.5376384]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var marker_00011931a2966755aeb0eb7acc9281fc = L.marker(
+                [-3.7309369, -38.5376384],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_6659a6453a7afb66988018059218943d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d29b15400266dfa8bfbc1439bbe80f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a031f089de2ecbfa5b490dee3addcb6 = $(`<div id="html_5a031f089de2ecbfa5b490dee3addcb6" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OCB9225<br><b>Cliente:</b> LAREDO - CENTRO<br><b>Peso:</b> 90.0<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 812.8</div>`)[0];
+                popup_6d29b15400266dfa8bfbc1439bbe80f0.setContent(html_5a031f089de2ecbfa5b490dee3addcb6);
+            
+        
+
+        marker_00011931a2966755aeb0eb7acc9281fc.bindPopup(popup_6d29b15400266dfa8bfbc1439bbe80f0)
+        ;
+
+        
+    
+    
+            marker_00011931a2966755aeb0eb7acc9281fc.bindTooltip(
+                `<div>
+                     LAREDO - CENTRO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_00011931a2966755aeb0eb7acc9281fc.setIcon(icon_6659a6453a7afb66988018059218943d);
+            
+    
+            var poly_line_92b250704674469b212e2cdf31bc682e = L.polyline(
+                [[-3.7309369, -38.5376384], [-3.7216531, -38.540229]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var marker_c8291c1a30561638b120bf41ff2e44a7 = L.marker(
+                [-3.7216531, -38.540229],
+                {
+}
+            ).addTo(feature_group_b52c8b7203e05ca8879e12d04ec5fe03);
+        
+    
+            var icon_008932417910e05b99310387873241ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0267fb66fc1ed0849fe99c555a04c30d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08c2bf504d72c64e218d3f8fc41afa72 = $(`<div id="html_08c2bf504d72c64e218d3f8fc41afa72" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OCB9225<br><b>Cliente:</b> COMETA (CENTRO)<br><b>Peso:</b> 123.1<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2294.64</div>`)[0];
+                popup_0267fb66fc1ed0849fe99c555a04c30d.setContent(html_08c2bf504d72c64e218d3f8fc41afa72);
+            
+        
+
+        marker_c8291c1a30561638b120bf41ff2e44a7.bindPopup(popup_0267fb66fc1ed0849fe99c555a04c30d)
+        ;
+
+        
+    
+    
+            marker_c8291c1a30561638b120bf41ff2e44a7.bindTooltip(
+                `<div>
+                     COMETA (CENTRO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c8291c1a30561638b120bf41ff2e44a7.setIcon(icon_008932417910e05b99310387873241ff);
+            
+    
+            feature_group_b52c8b7203e05ca8879e12d04ec5fe03.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_de634d11710cb0d40259eb740dfc6411 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_babb595958600273e8fd3d4a6794ce95 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_a11ceb52a565e40ce4f1d5c10db88e56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d372ad19d58ad5b16fcbc67d8bc0a37c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce755714d08f59e06cc7b8b62871810c = $(`<div id="html_ce755714d08f59e06cc7b8b62871810c" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_d372ad19d58ad5b16fcbc67d8bc0a37c.setContent(html_ce755714d08f59e06cc7b8b62871810c);
+            
+        
+
+        marker_babb595958600273e8fd3d4a6794ce95.bindPopup(popup_d372ad19d58ad5b16fcbc67d8bc0a37c)
+        ;
+
+        
+    
+    
+                marker_babb595958600273e8fd3d4a6794ce95.setIcon(icon_a11ceb52a565e40ce4f1d5c10db88e56);
+            
+    
+            var poly_line_eb4cb0b1b0382864a69e54ddbef09759 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7392121, -38.5924565]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var marker_2f4f45da76b0f36b1c104385cb907b92 = L.marker(
+                [-3.7392121, -38.5924565],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_20da8583207b21993313ddd4b1d7b0ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e22d0bd4a41a2040cdb223d09765d0df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d92324e5e44ff31e66b94cf6ccb45bc5 = $(`<div id="html_d92324e5e44ff31e66b94cf6ccb45bc5" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OSH4598<br><b>Cliente:</b> COMPREMAX - MISTER HULL<br><b>Peso:</b> 74.4<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 1822.51</div>`)[0];
+                popup_e22d0bd4a41a2040cdb223d09765d0df.setContent(html_d92324e5e44ff31e66b94cf6ccb45bc5);
+            
+        
+
+        marker_2f4f45da76b0f36b1c104385cb907b92.bindPopup(popup_e22d0bd4a41a2040cdb223d09765d0df)
+        ;
+
+        
+    
+    
+            marker_2f4f45da76b0f36b1c104385cb907b92.bindTooltip(
+                `<div>
+                     COMPREMAX - MISTER HULL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2f4f45da76b0f36b1c104385cb907b92.setIcon(icon_20da8583207b21993313ddd4b1d7b0ff);
+            
+    
+            var poly_line_8f589f4302e37a6546dd5384aef74457 = L.polyline(
+                [[-3.7392121, -38.5924565], [-3.730491, -38.5771848]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var marker_67aafdbceea95027ff0fd48024ba49fb = L.marker(
+                [-3.730491, -38.5771848],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_732610428a2f995873fc84a4e98ae268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc49e060761dbc7fb5c3fab0b2a17d7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e66574791705f40e170d2825968aea8c = $(`<div id="html_e66574791705f40e170d2825968aea8c" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OSH4598<br><b>Cliente:</b> COMPREMAX - SGT HERMINIO<br><b>Peso:</b> 39.8<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 926.0</div>`)[0];
+                popup_cc49e060761dbc7fb5c3fab0b2a17d7a.setContent(html_e66574791705f40e170d2825968aea8c);
+            
+        
+
+        marker_67aafdbceea95027ff0fd48024ba49fb.bindPopup(popup_cc49e060761dbc7fb5c3fab0b2a17d7a)
+        ;
+
+        
+    
+    
+            marker_67aafdbceea95027ff0fd48024ba49fb.bindTooltip(
+                `<div>
+                     COMPREMAX - SGT HERMINIO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67aafdbceea95027ff0fd48024ba49fb.setIcon(icon_732610428a2f995873fc84a4e98ae268);
+            
+    
+            var poly_line_e2728a0d171fceb30ab2afa0de87a5a3 = L.polyline(
+                [[-3.730491, -38.5771848], [-3.7049139, -38.5780082]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var marker_41cc889a0c82da5582233d655f496bb6 = L.marker(
+                [-3.7049139, -38.5780082],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_9a6ab4c96195557350d1ce1bd0a9c3b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73c58a97a9b39ba5a181feecc7bdf150 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ba1caa4866f7da1619a69e71a674ee6 = $(`<div id="html_3ba1caa4866f7da1619a69e71a674ee6" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OSH4598<br><b>Cliente:</b> COMETA (CASTELO BRANCO)<br><b>Peso:</b> 254.7<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 4674.06</div>`)[0];
+                popup_73c58a97a9b39ba5a181feecc7bdf150.setContent(html_3ba1caa4866f7da1619a69e71a674ee6);
+            
+        
+
+        marker_41cc889a0c82da5582233d655f496bb6.bindPopup(popup_73c58a97a9b39ba5a181feecc7bdf150)
+        ;
+
+        
+    
+    
+            marker_41cc889a0c82da5582233d655f496bb6.bindTooltip(
+                `<div>
+                     COMETA (CASTELO BRANCO)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41cc889a0c82da5582233d655f496bb6.setIcon(icon_9a6ab4c96195557350d1ce1bd0a9c3b5);
+            
+    
+            var poly_line_4ea257fcb53f2681ee84368b6f1734ac = L.polyline(
+                [[-3.7049139, -38.5780082], [-3.7123457, -38.5589927]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var marker_3b05b312de2c5f63cd94781787146351 = L.marker(
+                [-3.7123457, -38.5589927],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_35e57db8495de18af4b052f1c640cc5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f60903b99e87118cbbd42bbe37d7a90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de1f43e28ed1249ea5640fed284b2d58 = $(`<div id="html_de1f43e28ed1249ea5640fed284b2d58" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OSH4598<br><b>Cliente:</b> MERCANTIL NOVO BOX LTDA<br><b>Peso:</b> 52.6<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 918.48</div>`)[0];
+                popup_7f60903b99e87118cbbd42bbe37d7a90.setContent(html_de1f43e28ed1249ea5640fed284b2d58);
+            
+        
+
+        marker_3b05b312de2c5f63cd94781787146351.bindPopup(popup_7f60903b99e87118cbbd42bbe37d7a90)
+        ;
+
+        
+    
+    
+            marker_3b05b312de2c5f63cd94781787146351.bindTooltip(
+                `<div>
+                     MERCANTIL NOVO BOX LTDA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b05b312de2c5f63cd94781787146351.setIcon(icon_35e57db8495de18af4b052f1c640cc5f);
+            
+    
+            var poly_line_e08e0457fe16feaf28edd3c43b8435b4 = L.polyline(
+                [[-3.7123457, -38.5589927], [-3.7403104, -38.5603054]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var marker_1f99a8e71914a771d1be3c8ca71096e2 = L.marker(
+                [-3.7403104, -38.5603054],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_7547b2f0b261a935ddfa759ede98bb08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a93fd4d5de7a278070cf8ee8ca7aa1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66627b4e0fb13baf9df57f32503df26f = $(`<div id="html_66627b4e0fb13baf9df57f32503df26f" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OSH4598<br><b>Cliente:</b> COMETA (JOVITA FEITOSA)<br><b>Peso:</b> 124.7<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 3067.02</div>`)[0];
+                popup_8a93fd4d5de7a278070cf8ee8ca7aa1e.setContent(html_66627b4e0fb13baf9df57f32503df26f);
+            
+        
+
+        marker_1f99a8e71914a771d1be3c8ca71096e2.bindPopup(popup_8a93fd4d5de7a278070cf8ee8ca7aa1e)
+        ;
+
+        
+    
+    
+            marker_1f99a8e71914a771d1be3c8ca71096e2.bindTooltip(
+                `<div>
+                     COMETA (JOVITA FEITOSA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f99a8e71914a771d1be3c8ca71096e2.setIcon(icon_7547b2f0b261a935ddfa759ede98bb08);
+            
+    
+            var poly_line_eacbdf82bce3d7f29df459dea690eb05 = L.polyline(
+                [[-3.7403104, -38.5603054], [-3.83265451, -38.58103395]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var marker_b2237b824ea8204cd1981df6e04f2d76 = L.marker(
+                [-3.83265451, -38.58103395],
+                {
+}
+            ).addTo(feature_group_de634d11710cb0d40259eb740dfc6411);
+        
+    
+            var icon_5a4b9b497be28f60c0b5d2b2995c2444 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62680e6962a42ac0200607b47bfe1066 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe214b220c5384ccaf3324802d8d1304 = $(`<div id="html_fe214b220c5384ccaf3324802d8d1304" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> OSH4598<br><b>Cliente:</b> COMPREMAX - GODOFREDO<br><b>Peso:</b> 46.8<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 825.32</div>`)[0];
+                popup_62680e6962a42ac0200607b47bfe1066.setContent(html_fe214b220c5384ccaf3324802d8d1304);
+            
+        
+
+        marker_b2237b824ea8204cd1981df6e04f2d76.bindPopup(popup_62680e6962a42ac0200607b47bfe1066)
+        ;
+
+        
+    
+    
+            marker_b2237b824ea8204cd1981df6e04f2d76.bindTooltip(
+                `<div>
+                     COMPREMAX - GODOFREDO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2237b824ea8204cd1981df6e04f2d76.setIcon(icon_5a4b9b497be28f60c0b5d2b2995c2444);
+            
+    
+            feature_group_de634d11710cb0d40259eb740dfc6411.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_be4404032508dc9adab3e7a103d62225 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_bdd0bd11cfa923cd5abf84a4d611346d = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var icon_1442068d7a22f302cbb8eea0cf6c3b30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e66ce8b55e4125bff3c6df969aba476 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eac9fa7288f6a3d4f91cf403cd7f9528 = $(`<div id="html_eac9fa7288f6a3d4f91cf403cd7f9528" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_2e66ce8b55e4125bff3c6df969aba476.setContent(html_eac9fa7288f6a3d4f91cf403cd7f9528);
+            
+        
+
+        marker_bdd0bd11cfa923cd5abf84a4d611346d.bindPopup(popup_2e66ce8b55e4125bff3c6df969aba476)
+        ;
+
+        
+    
+    
+                marker_bdd0bd11cfa923cd5abf84a4d611346d.setIcon(icon_1442068d7a22f302cbb8eea0cf6c3b30);
+            
+    
+            var poly_line_b518eb92aa48d5c4eca5d1861f5f9e3b = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7594355, -38.6163545]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var marker_e927f9491167cfcf5730ebb38dac4322 = L.marker(
+                [-3.7594355, -38.6163545],
+                {
+}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var icon_6aff86cc8f3ee3080220a6f29d01a3f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8898d74e813fad956b0eeef197a2ad32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_979e18912ba3a16fdc72cdff54f8225c = $(`<div id="html_979e18912ba3a16fdc72cdff54f8225c" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4654<br><b>Cliente:</b> EXITO - PRQ ALBANO<br><b>Peso:</b> 87.4<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 1393.46</div>`)[0];
+                popup_8898d74e813fad956b0eeef197a2ad32.setContent(html_979e18912ba3a16fdc72cdff54f8225c);
+            
+        
+
+        marker_e927f9491167cfcf5730ebb38dac4322.bindPopup(popup_8898d74e813fad956b0eeef197a2ad32)
+        ;
+
+        
+    
+    
+            marker_e927f9491167cfcf5730ebb38dac4322.bindTooltip(
+                `<div>
+                     EXITO - PRQ ALBANO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e927f9491167cfcf5730ebb38dac4322.setIcon(icon_6aff86cc8f3ee3080220a6f29d01a3f1);
+            
+    
+            var poly_line_c86c5942e43d9da9b59cfcf7c77cf06d = L.polyline(
+                [[-3.7594355, -38.6163545], [-3.77334061, -38.62707738]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var marker_2bcb3bb9a1e46ada16be77753d7c9bed = L.marker(
+                [-3.77334061, -38.62707738],
+                {
+}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var icon_6fa4a19f8b9a8e6100ae3eab66f13778 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74a45ac37ef701e403a1a9d21d20b9d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f303ef9198dc481d14752d469c5473b1 = $(`<div id="html_f303ef9198dc481d14752d469c5473b1" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4654<br><b>Cliente:</b> COMPREMAX - JUREMA<br><b>Peso:</b> 105.5<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 1307.2</div>`)[0];
+                popup_74a45ac37ef701e403a1a9d21d20b9d3.setContent(html_f303ef9198dc481d14752d469c5473b1);
+            
+        
+
+        marker_2bcb3bb9a1e46ada16be77753d7c9bed.bindPopup(popup_74a45ac37ef701e403a1a9d21d20b9d3)
+        ;
+
+        
+    
+    
+            marker_2bcb3bb9a1e46ada16be77753d7c9bed.bindTooltip(
+                `<div>
+                     COMPREMAX - JUREMA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bcb3bb9a1e46ada16be77753d7c9bed.setIcon(icon_6fa4a19f8b9a8e6100ae3eab66f13778);
+            
+    
+            var poly_line_0c5443ed3ea047eff2c8204f21cbbd84 = L.polyline(
+                [[-3.77334061, -38.62707738], [-3.76944093, -38.65433696]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var marker_7460249dec27a5421623c4c47d078fe9 = L.marker(
+                [-3.76944093, -38.65433696],
+                {
+}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var icon_90019db3338476611719fd48907e9475 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d858dc7e65d9b37277f22f9b0eaced4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b3313b5a9619a26d6fb931edb79e579 = $(`<div id="html_3b3313b5a9619a26d6fb931edb79e579" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4654<br><b>Cliente:</b> COMPREMAX - CONJ NOVA METROPOLE<br><b>Peso:</b> 97.7<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 1367.0</div>`)[0];
+                popup_7d858dc7e65d9b37277f22f9b0eaced4.setContent(html_3b3313b5a9619a26d6fb931edb79e579);
+            
+        
+
+        marker_7460249dec27a5421623c4c47d078fe9.bindPopup(popup_7d858dc7e65d9b37277f22f9b0eaced4)
+        ;
+
+        
+    
+    
+            marker_7460249dec27a5421623c4c47d078fe9.bindTooltip(
+                `<div>
+                     COMPREMAX - CONJ NOVA METROPOLE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7460249dec27a5421623c4c47d078fe9.setIcon(icon_90019db3338476611719fd48907e9475);
+            
+    
+            var poly_line_2be8009ab4814fb1ed38ac0fd7971de6 = L.polyline(
+                [[-3.76944093, -38.65433696], [-3.7666193, -38.6538536]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var marker_2ceec052e91142cfb9500118f3e3ad2a = L.marker(
+                [-3.7666193, -38.6538536],
+                {
+}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var icon_c2eb04e6da0ccf51e1f5003d400f23af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2768c51d4173f38611dfd3e77fe087b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccf4f71610f8527b8aea79ba48ca3a1b = $(`<div id="html_ccf4f71610f8527b8aea79ba48ca3a1b" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4654<br><b>Cliente:</b> COMPREMAX - METROPOLE<br><b>Peso:</b> 51.2<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 733.6</div>`)[0];
+                popup_c2768c51d4173f38611dfd3e77fe087b.setContent(html_ccf4f71610f8527b8aea79ba48ca3a1b);
+            
+        
+
+        marker_2ceec052e91142cfb9500118f3e3ad2a.bindPopup(popup_c2768c51d4173f38611dfd3e77fe087b)
+        ;
+
+        
+    
+    
+            marker_2ceec052e91142cfb9500118f3e3ad2a.bindTooltip(
+                `<div>
+                     COMPREMAX - METROPOLE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ceec052e91142cfb9500118f3e3ad2a.setIcon(icon_c2eb04e6da0ccf51e1f5003d400f23af);
+            
+    
+            var poly_line_be602d1e529a99c2a945e6d9ee048d1e = L.polyline(
+                [[-3.7666193, -38.6538536], [-3.67322246, -38.67026304]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var marker_e730191c9c3b6f6466babbef094092c3 = L.marker(
+                [-3.67322246, -38.67026304],
+                {
+}
+            ).addTo(feature_group_be4404032508dc9adab3e7a103d62225);
+        
+    
+            var icon_db14b252e331aeece2e31a98357e6968 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_069089be38f17d2f791efe4d7d93ff72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baa881e457fe52d30c06d792ca33f409 = $(`<div id="html_baa881e457fe52d30c06d792ca33f409" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4654<br><b>Cliente:</b> COMPREMAX - ICARAI<br><b>Peso:</b> 131.8<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 1887.8</div>`)[0];
+                popup_069089be38f17d2f791efe4d7d93ff72.setContent(html_baa881e457fe52d30c06d792ca33f409);
+            
+        
+
+        marker_e730191c9c3b6f6466babbef094092c3.bindPopup(popup_069089be38f17d2f791efe4d7d93ff72)
+        ;
+
+        
+    
+    
+            marker_e730191c9c3b6f6466babbef094092c3.bindTooltip(
+                `<div>
+                     COMPREMAX - ICARAI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e730191c9c3b6f6466babbef094092c3.setIcon(icon_db14b252e331aeece2e31a98357e6968);
+            
+    
+            feature_group_be4404032508dc9adab3e7a103d62225.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_dabd02de272b8fedd60b30294db9c2b7 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var icon_a2812b5445fc471a402cc566515beeeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_344722dacb3e044099ff6c73d10b6313 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e4da2c6f64c326057d3a6f472576639 = $(`<div id="html_8e4da2c6f64c326057d3a6f472576639" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_344722dacb3e044099ff6c73d10b6313.setContent(html_8e4da2c6f64c326057d3a6f472576639);
+            
+        
+
+        marker_dabd02de272b8fedd60b30294db9c2b7.bindPopup(popup_344722dacb3e044099ff6c73d10b6313)
+        ;
+
+        
+    
+    
+                marker_dabd02de272b8fedd60b30294db9c2b7.setIcon(icon_a2812b5445fc471a402cc566515beeeb);
+            
+    
+            var poly_line_69909d63db611cf2da76eb901c2e176a = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7842908, -38.5691114]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var marker_8560398d58c867f1f186f9e12b70b376 = L.marker(
+                [-3.7842908, -38.5691114],
+                {
+}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var icon_98735cfd0f5409df91a1f2d4c32cbb41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdcc2c0112e99d58dc035aa8487d56e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_217890724777813342a5dd5742303a12 = $(`<div id="html_217890724777813342a5dd5742303a12" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4814<br><b>Cliente:</b> SUPER PORTUGAL - MARAPONGA<br><b>Peso:</b> 8.5<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 293.0</div>`)[0];
+                popup_cdcc2c0112e99d58dc035aa8487d56e4.setContent(html_217890724777813342a5dd5742303a12);
+            
+        
+
+        marker_8560398d58c867f1f186f9e12b70b376.bindPopup(popup_cdcc2c0112e99d58dc035aa8487d56e4)
+        ;
+
+        
+    
+    
+            marker_8560398d58c867f1f186f9e12b70b376.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL - MARAPONGA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8560398d58c867f1f186f9e12b70b376.setIcon(icon_98735cfd0f5409df91a1f2d4c32cbb41);
+            
+    
+            var poly_line_cde1ceb81a8ccc1ff02ff862c3b5f399 = L.polyline(
+                [[-3.7842908, -38.5691114], [-3.7807845, -38.5966783]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var marker_d6a82f0aecf9168226ea299a21acd61e = L.marker(
+                [-3.7807845, -38.5966783],
+                {
+}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var icon_990575d5bfda3dec6614c2fac8cd23a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4072e9cb28d03371c41346777890cf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3056465d9a56ddcfe98afe716ebc87da = $(`<div id="html_3056465d9a56ddcfe98afe716ebc87da" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4814<br><b>Cliente:</b> SUPER PORTUGAL - BRAGANCA<br><b>Peso:</b> 9.6<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 327.3</div>`)[0];
+                popup_f4072e9cb28d03371c41346777890cf6.setContent(html_3056465d9a56ddcfe98afe716ebc87da);
+            
+        
+
+        marker_d6a82f0aecf9168226ea299a21acd61e.bindPopup(popup_f4072e9cb28d03371c41346777890cf6)
+        ;
+
+        
+    
+    
+            marker_d6a82f0aecf9168226ea299a21acd61e.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL - BRAGANCA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d6a82f0aecf9168226ea299a21acd61e.setIcon(icon_990575d5bfda3dec6614c2fac8cd23a4);
+            
+    
+            var poly_line_f03ca299c42fc2b369b5193857729a83 = L.polyline(
+                [[-3.7807845, -38.5966783], [-3.7688869, -38.6231497]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var marker_f95960946b2c488e962be7aa70098589 = L.marker(
+                [-3.7688869, -38.6231497],
+                {
+}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var icon_5216014e2f224c94584e84ca997eb434 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a605a78eafd404eb343e08afcbe2582 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db8ca4185a542d0ec335c68642dbc387 = $(`<div id="html_db8ca4185a542d0ec335c68642dbc387" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4814<br><b>Cliente:</b> EXITO - PRQ POTIRA II<br><b>Peso:</b> 60.4<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 1266.0</div>`)[0];
+                popup_7a605a78eafd404eb343e08afcbe2582.setContent(html_db8ca4185a542d0ec335c68642dbc387);
+            
+        
+
+        marker_f95960946b2c488e962be7aa70098589.bindPopup(popup_7a605a78eafd404eb343e08afcbe2582)
+        ;
+
+        
+    
+    
+            marker_f95960946b2c488e962be7aa70098589.bindTooltip(
+                `<div>
+                     EXITO - PRQ POTIRA II
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f95960946b2c488e962be7aa70098589.setIcon(icon_5216014e2f224c94584e84ca997eb434);
+            
+    
+            var poly_line_914247227d25ed3d6fb08d46b8f4a9c8 = L.polyline(
+                [[-3.7688869, -38.6231497], [-3.767533, -38.6248232]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var marker_33f5879bbde789b055347b1d11cf5e8a = L.marker(
+                [-3.767533, -38.6248232],
+                {
+}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var icon_610a5e48748f726f494c4907f12ade09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd1d450c007461445c32223cfc49d616 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a10f2894f5b6976d71c75060eed2ad5 = $(`<div id="html_6a10f2894f5b6976d71c75060eed2ad5" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4814<br><b>Cliente:</b> EXITO - PRQ POTIRA III<br><b>Peso:</b> 14.5<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 542.0</div>`)[0];
+                popup_fd1d450c007461445c32223cfc49d616.setContent(html_6a10f2894f5b6976d71c75060eed2ad5);
+            
+        
+
+        marker_33f5879bbde789b055347b1d11cf5e8a.bindPopup(popup_fd1d450c007461445c32223cfc49d616)
+        ;
+
+        
+    
+    
+            marker_33f5879bbde789b055347b1d11cf5e8a.bindTooltip(
+                `<div>
+                     EXITO - PRQ POTIRA III
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_33f5879bbde789b055347b1d11cf5e8a.setIcon(icon_610a5e48748f726f494c4907f12ade09);
+            
+    
+            var poly_line_df82b5b120d3031a5689c5ce6c03cd69 = L.polyline(
+                [[-3.767533, -38.6248232], [-3.758694, -38.625415]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var marker_75981bfd1bed69fd00b90c6a56fee1b2 = L.marker(
+                [-3.758694, -38.625415],
+                {
+}
+            ).addTo(feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26);
+        
+    
+            var icon_9e84b29c21bc16bb40b9c55b922aa961 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b70ee15942e260562324b4c66e551d01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_026acab89a17a5f48622b4f85e242d39 = $(`<div id="html_026acab89a17a5f48622b4f85e242d39" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNP4814<br><b>Cliente:</b> EXITO - ACAPULCO<br><b>Peso:</b> 37.6<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 846.0</div>`)[0];
+                popup_b70ee15942e260562324b4c66e551d01.setContent(html_026acab89a17a5f48622b4f85e242d39);
+            
+        
+
+        marker_75981bfd1bed69fd00b90c6a56fee1b2.bindPopup(popup_b70ee15942e260562324b4c66e551d01)
+        ;
+
+        
+    
+    
+            marker_75981bfd1bed69fd00b90c6a56fee1b2.bindTooltip(
+                `<div>
+                     EXITO - ACAPULCO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75981bfd1bed69fd00b90c6a56fee1b2.setIcon(icon_9e84b29c21bc16bb40b9c55b922aa961);
+            
+    
+            feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_99d67074f331a548d83c2c7b3597201e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3fbef65ad99056bf8e33b1a67070cc55 = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_99d67074f331a548d83c2c7b3597201e);
+        
+    
+            var icon_85dd93264930ebbac8436c66da9a9721 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15c6fe89d799eff49fa676a3984aac6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c2531c48064767e0c4660cea8ae567c = $(`<div id="html_3c2531c48064767e0c4660cea8ae567c" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_15c6fe89d799eff49fa676a3984aac6e.setContent(html_3c2531c48064767e0c4660cea8ae567c);
+            
+        
+
+        marker_3fbef65ad99056bf8e33b1a67070cc55.bindPopup(popup_15c6fe89d799eff49fa676a3984aac6e)
+        ;
+
+        
+    
+    
+                marker_3fbef65ad99056bf8e33b1a67070cc55.setIcon(icon_85dd93264930ebbac8436c66da9a9721);
+            
+    
+            var poly_line_080e6bbea7726114806b3c8ab305b9de = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7929966, -38.5335303]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_99d67074f331a548d83c2c7b3597201e);
+        
+    
+            var marker_3ac3187ec01c174c2cb0fd2843b74d0c = L.marker(
+                [-3.7929966, -38.5335303],
+                {
+}
+            ).addTo(feature_group_99d67074f331a548d83c2c7b3597201e);
+        
+    
+            var icon_3ab03414f10daf2c26808276327f1844 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13fc7f16f3aacf459ea98e4679ae0404 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45049ca189c2f8d8cdef40559e413ffb = $(`<div id="html_45049ca189c2f8d8cdef40559e413ffb" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> PNQ3270<br><b>Cliente:</b> SUPER DO POVO - CD<br><b>Peso:</b> 539.2<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 8465.44</div>`)[0];
+                popup_13fc7f16f3aacf459ea98e4679ae0404.setContent(html_45049ca189c2f8d8cdef40559e413ffb);
+            
+        
+
+        marker_3ac3187ec01c174c2cb0fd2843b74d0c.bindPopup(popup_13fc7f16f3aacf459ea98e4679ae0404)
+        ;
+
+        
+    
+    
+            marker_3ac3187ec01c174c2cb0fd2843b74d0c.bindTooltip(
+                `<div>
+                     SUPER DO POVO - CD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3ac3187ec01c174c2cb0fd2843b74d0c.setIcon(icon_3ab03414f10daf2c26808276327f1844);
+            
+    
+            feature_group_99d67074f331a548d83c2c7b3597201e.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_b1da55eb29f169606a64e57fd441d536 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e9699ddf6d80d6adcc7b0b26fe953a8a = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_b1da55eb29f169606a64e57fd441d536);
+        
+    
+            var icon_0e815c5f5acb1914d6dd652667423b31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f722a56dceccb512b2fb4e7f967efb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5a5e6d698116768ba2fac688acda379 = $(`<div id="html_a5a5e6d698116768ba2fac688acda379" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_8f722a56dceccb512b2fb4e7f967efb1.setContent(html_a5a5e6d698116768ba2fac688acda379);
+            
+        
+
+        marker_e9699ddf6d80d6adcc7b0b26fe953a8a.bindPopup(popup_8f722a56dceccb512b2fb4e7f967efb1)
+        ;
+
+        
+    
+    
+                marker_e9699ddf6d80d6adcc7b0b26fe953a8a.setIcon(icon_0e815c5f5acb1914d6dd652667423b31);
+            
+    
+            var poly_line_9b2bccffa6ca592f15c740353e523bad = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.81528198, -38.55661271]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_b1da55eb29f169606a64e57fd441d536);
+        
+    
+            var marker_4d4facd5fff5651faeb8fb117b5703af = L.marker(
+                [-3.81528198, -38.55661271],
+                {
+}
+            ).addTo(feature_group_b1da55eb29f169606a64e57fd441d536);
+        
+    
+            var icon_a7181a73676f2eefd4fa9bf98b053894 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36dd33a1c64eee526a124de8ab036e91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1eb9337a15d404bb073d32a3dd87eded = $(`<div id="html_1eb9337a15d404bb073d32a3dd87eded" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> POL9211<br><b>Cliente:</b> SUPER LAGOA - CD<br><b>Peso:</b> 639.5<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 13916.86</div>`)[0];
+                popup_36dd33a1c64eee526a124de8ab036e91.setContent(html_1eb9337a15d404bb073d32a3dd87eded);
+            
+        
+
+        marker_4d4facd5fff5651faeb8fb117b5703af.bindPopup(popup_36dd33a1c64eee526a124de8ab036e91)
+        ;
+
+        
+    
+    
+            marker_4d4facd5fff5651faeb8fb117b5703af.bindTooltip(
+                `<div>
+                     SUPER LAGOA - CD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d4facd5fff5651faeb8fb117b5703af.setIcon(icon_a7181a73676f2eefd4fa9bf98b053894);
+            
+    
+            feature_group_b1da55eb29f169606a64e57fd441d536.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var feature_group_767866c16514e3252cae24cc494f4b4b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_101b5e8b6fb17d69b2cbc496ba6c437d = L.marker(
+                [-3.7572635398641, -38.5854081195323],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_b9267763fa512b58833673611842f0c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae3a073d5a3353daa683adf437b21657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_348ab329f82219d5dccccbe385c88ea1 = $(`<div id="html_348ab329f82219d5dccccbe385c88ea1" style="width: 100.0%; height: 100.0%;">VALEMILK-CD</div>`)[0];
+                popup_ae3a073d5a3353daa683adf437b21657.setContent(html_348ab329f82219d5dccccbe385c88ea1);
+            
+        
+
+        marker_101b5e8b6fb17d69b2cbc496ba6c437d.bindPopup(popup_ae3a073d5a3353daa683adf437b21657)
+        ;
+
+        
+    
+    
+                marker_101b5e8b6fb17d69b2cbc496ba6c437d.setIcon(icon_b9267763fa512b58833673611842f0c4);
+            
+    
+            var poly_line_122df6eda6d3ca8294aa490b8bad6594 = L.polyline(
+                [[-3.7572635398641, -38.5854081195323], [-3.7802372, -38.5784333]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_1a4448348ef72af521fdfa7056291361 = L.marker(
+                [-3.7802372, -38.5784333],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_d733277034eb767a3eb247c2ea1bf7f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0552fcedc2a24c839be2891e44c17af9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4196dbe8152fffec0a7cd86a569a826e = $(`<div id="html_4196dbe8152fffec0a7cd86a569a826e" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> SUPER PORTUGAL - VILA PERI<br><b>Peso:</b> 18.9<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 647.8</div>`)[0];
+                popup_0552fcedc2a24c839be2891e44c17af9.setContent(html_4196dbe8152fffec0a7cd86a569a826e);
+            
+        
+
+        marker_1a4448348ef72af521fdfa7056291361.bindPopup(popup_0552fcedc2a24c839be2891e44c17af9)
+        ;
+
+        
+    
+    
+            marker_1a4448348ef72af521fdfa7056291361.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL - VILA PERI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a4448348ef72af521fdfa7056291361.setIcon(icon_d733277034eb767a3eb247c2ea1bf7f1);
+            
+    
+            var poly_line_b57763abd857ebb30e2a485fd2fa0a54 = L.polyline(
+                [[-3.7802372, -38.5784333], [-3.777836, -38.597821]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_bb799d960e111a74bcd2b60ba7732072 = L.marker(
+                [-3.777836, -38.597821],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_dbb8770084404bdbfe830fbe62a470c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c372315e8a0ee49622bd55c433c6e4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7ce653f06e06eb20a8d46362ef57444 = $(`<div id="html_d7ce653f06e06eb20a8d46362ef57444" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> SUPER PORTUGAL - VITAL BRASIL<br><b>Peso:</b> 14.6<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 448.8</div>`)[0];
+                popup_5c372315e8a0ee49622bd55c433c6e4b.setContent(html_d7ce653f06e06eb20a8d46362ef57444);
+            
+        
+
+        marker_bb799d960e111a74bcd2b60ba7732072.bindPopup(popup_5c372315e8a0ee49622bd55c433c6e4b)
+        ;
+
+        
+    
+    
+            marker_bb799d960e111a74bcd2b60ba7732072.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL - VITAL BRASIL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb799d960e111a74bcd2b60ba7732072.setIcon(icon_dbb8770084404bdbfe830fbe62a470c2);
+            
+    
+            var poly_line_3bf38f98a0eecbaff68e1c5823a26eb7 = L.polyline(
+                [[-3.777836, -38.597821], [-3.8143736, -38.6120921]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_cc80ccce1066b00f703121761e310b48 = L.marker(
+                [-3.8143736, -38.6120921],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_e1d0f64bf61b454bbad4e622674a58b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1cd9b23e1a398082f0189e2178c68a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9c33339ab6fc16b494fdce95d4fc5b8 = $(`<div id="html_b9c33339ab6fc16b494fdce95d4fc5b8" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> BARATAO - SIQUEIRA<br><b>Peso:</b> 19.0<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 609.28</div>`)[0];
+                popup_b1cd9b23e1a398082f0189e2178c68a9.setContent(html_b9c33339ab6fc16b494fdce95d4fc5b8);
+            
+        
+
+        marker_cc80ccce1066b00f703121761e310b48.bindPopup(popup_b1cd9b23e1a398082f0189e2178c68a9)
+        ;
+
+        
+    
+    
+            marker_cc80ccce1066b00f703121761e310b48.bindTooltip(
+                `<div>
+                     BARATAO - SIQUEIRA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc80ccce1066b00f703121761e310b48.setIcon(icon_e1d0f64bf61b454bbad4e622674a58b0);
+            
+    
+            var poly_line_2fc250745e194a4704d843f09e4cec3d = L.polyline(
+                [[-3.8143736, -38.6120921], [-3.817788, -38.589921]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_8efaeac76c932f26019fdb5998180edb = L.marker(
+                [-3.817788, -38.589921],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_b4516e3b1d2be67f62c9b1a4c0b58dd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9731c0abaa5aaf3f7427c38aa5718f3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fc1f712b0f7714bb9d1473de582a3d0 = $(`<div id="html_8fc1f712b0f7714bb9d1473de582a3d0" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> BARATAO - CONJ ESPERANÇA<br><b>Peso:</b> 106.3<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 3122.08</div>`)[0];
+                popup_9731c0abaa5aaf3f7427c38aa5718f3d.setContent(html_8fc1f712b0f7714bb9d1473de582a3d0);
+            
+        
+
+        marker_8efaeac76c932f26019fdb5998180edb.bindPopup(popup_9731c0abaa5aaf3f7427c38aa5718f3d)
+        ;
+
+        
+    
+    
+            marker_8efaeac76c932f26019fdb5998180edb.bindTooltip(
+                `<div>
+                     BARATAO - CONJ ESPERANÇA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8efaeac76c932f26019fdb5998180edb.setIcon(icon_b4516e3b1d2be67f62c9b1a4c0b58dd0);
+            
+    
+            var poly_line_b2968d2cc9ff588062c27a50194cf282 = L.polyline(
+                [[-3.817788, -38.589921], [-3.86330658, -38.58178138]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_b4a7c3bc99dd7fba3ddbd9671f5e7e1a = L.marker(
+                [-3.86330658, -38.58178138],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_d09c65d0fac3682056c4fe939743c40e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3bc8cc39b1ede4283bc6fb34a3a4698 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c7f3a2380e342c1ed98e4a60a23a59a = $(`<div id="html_6c7f3a2380e342c1ed98e4a60a23a59a" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> BARATAO - PAJUCARA<br><b>Peso:</b> 44.3<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 1226.78</div>`)[0];
+                popup_c3bc8cc39b1ede4283bc6fb34a3a4698.setContent(html_6c7f3a2380e342c1ed98e4a60a23a59a);
+            
+        
+
+        marker_b4a7c3bc99dd7fba3ddbd9671f5e7e1a.bindPopup(popup_c3bc8cc39b1ede4283bc6fb34a3a4698)
+        ;
+
+        
+    
+    
+            marker_b4a7c3bc99dd7fba3ddbd9671f5e7e1a.bindTooltip(
+                `<div>
+                     BARATAO - PAJUCARA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4a7c3bc99dd7fba3ddbd9671f5e7e1a.setIcon(icon_d09c65d0fac3682056c4fe939743c40e);
+            
+    
+            var poly_line_bc28087200321fc124c5144d1b1c5be7 = L.polyline(
+                [[-3.86330658, -38.58178138], [-3.7872948, -38.5439698]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_9fcdabb78cd4b6de952629807307aee1 = L.marker(
+                [-3.7872948, -38.5439698],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_7b6fde52e10af3b5e226ada805aefe35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fc665ffabdb577a364c38b9e5ac349b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae3417821e7352773bdaf6e5f8d6b991 = $(`<div id="html_ae3417821e7352773bdaf6e5f8d6b991" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> SUPER PORTUGAL - SERRINHA<br><b>Peso:</b> 15.7<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 530.8</div>`)[0];
+                popup_3fc665ffabdb577a364c38b9e5ac349b.setContent(html_ae3417821e7352773bdaf6e5f8d6b991);
+            
+        
+
+        marker_9fcdabb78cd4b6de952629807307aee1.bindPopup(popup_3fc665ffabdb577a364c38b9e5ac349b)
+        ;
+
+        
+    
+    
+            marker_9fcdabb78cd4b6de952629807307aee1.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL - SERRINHA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9fcdabb78cd4b6de952629807307aee1.setIcon(icon_7b6fde52e10af3b5e226ada805aefe35);
+            
+    
+            var poly_line_fd07b7d8619fca07bca81cb00858360b = L.polyline(
+                [[-3.7872948, -38.5439698], [-3.7899059, -38.495258]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_b29fd2beb000a426847262f4a5ce48b3 = L.marker(
+                [-3.7899059, -38.495258],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_64055cd4db93e2b6915900d27f338257 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cefc6197d654f68fff43686d5debd4fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9d60f54d7aadeccc7e2ca0132aa6f7e = $(`<div id="html_b9d60f54d7aadeccc7e2ca0132aa6f7e" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> SUPER PORTUGAL - CIDADE DOS FUNC<br><b>Peso:</b> 60.9<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2101.0</div>`)[0];
+                popup_cefc6197d654f68fff43686d5debd4fd.setContent(html_b9d60f54d7aadeccc7e2ca0132aa6f7e);
+            
+        
+
+        marker_b29fd2beb000a426847262f4a5ce48b3.bindPopup(popup_cefc6197d654f68fff43686d5debd4fd)
+        ;
+
+        
+    
+    
+            marker_b29fd2beb000a426847262f4a5ce48b3.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL - CIDADE DOS FUNC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b29fd2beb000a426847262f4a5ce48b3.setIcon(icon_64055cd4db93e2b6915900d27f338257);
+            
+    
+            var poly_line_dc7d486e90ab1d8678f913971a088b49 = L.polyline(
+                [[-3.7899059, -38.495258], [-3.79508034, -38.47443215]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_e9eb97e120df161e60fdb2e51cefac7d = L.marker(
+                [-3.79508034, -38.47443215],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_2f74fce389696ecdcbc23573029aa622 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ee1301b9acc6427b3ee2e4424f9abd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f852fe84b5eaba0d393036b5cff7ab9 = $(`<div id="html_9f852fe84b5eaba0d393036b5cff7ab9" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> SUPER PORTUGAL- SAPIRANGA<br><b>Peso:</b> 78.8<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 2885.8</div>`)[0];
+                popup_2ee1301b9acc6427b3ee2e4424f9abd2.setContent(html_9f852fe84b5eaba0d393036b5cff7ab9);
+            
+        
+
+        marker_e9eb97e120df161e60fdb2e51cefac7d.bindPopup(popup_2ee1301b9acc6427b3ee2e4424f9abd2)
+        ;
+
+        
+    
+    
+            marker_e9eb97e120df161e60fdb2e51cefac7d.bindTooltip(
+                `<div>
+                     SUPER PORTUGAL- SAPIRANGA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9eb97e120df161e60fdb2e51cefac7d.setIcon(icon_2f74fce389696ecdcbc23573029aa622);
+            
+    
+            var poly_line_9147371f86573734521cd18ee9a72a84 = L.polyline(
+                [[-3.79508034, -38.47443215], [-3.7967961, -38.46483618]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_63890e8759521c33bc8de1bd5b78674c = L.marker(
+                [-3.7967961, -38.46483618],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_7c14c02e3c97ca48dc033fb02e960a76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec351e350b178e584745210107717e19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b55178e5485752435aec8f6923ebdfd = $(`<div id="html_3b55178e5485752435aec8f6923ebdfd" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> MERCADINHO DA APARECIDA<br><b>Peso:</b> 22.9<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 226.8</div>`)[0];
+                popup_ec351e350b178e584745210107717e19.setContent(html_3b55178e5485752435aec8f6923ebdfd);
+            
+        
+
+        marker_63890e8759521c33bc8de1bd5b78674c.bindPopup(popup_ec351e350b178e584745210107717e19)
+        ;
+
+        
+    
+    
+            marker_63890e8759521c33bc8de1bd5b78674c.bindTooltip(
+                `<div>
+                     MERCADINHO DA APARECIDA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63890e8759521c33bc8de1bd5b78674c.setIcon(icon_7c14c02e3c97ca48dc033fb02e960a76);
+            
+    
+            var poly_line_53ea77ea3ac3f514e82c4ef7ae3d15fa = L.polyline(
+                [[-3.7967961, -38.46483618], [-3.7881406, -38.4676257]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_cb5c5a190b1bf69ebb4b320161bc81e9 = L.marker(
+                [-3.7881406, -38.4676257],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_b124c95d2110bf117509281bc57af4a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "cloud-sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97531e18d74eb9b838af1f739c9fe9d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01bfdc2de9180ccc17f957b5f2ef7c16 = $(`<div id="html_01bfdc2de9180ccc17f957b5f2ef7c16" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> PANATTERIA J P LTDA<br><b>Peso:</b> 4.8<br><b>Turno:</b> DIURNO<br><b>Faturamento:</b> R$ 165.6</div>`)[0];
+                popup_97531e18d74eb9b838af1f739c9fe9d3.setContent(html_01bfdc2de9180ccc17f957b5f2ef7c16);
+            
+        
+
+        marker_cb5c5a190b1bf69ebb4b320161bc81e9.bindPopup(popup_97531e18d74eb9b838af1f739c9fe9d3)
+        ;
+
+        
+    
+    
+            marker_cb5c5a190b1bf69ebb4b320161bc81e9.bindTooltip(
+                `<div>
+                     PANATTERIA J P LTDA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb5c5a190b1bf69ebb4b320161bc81e9.setIcon(icon_b124c95d2110bf117509281bc57af4a7);
+            
+    
+            var poly_line_ddacb5485a68969148aee9370ca6f5c3 = L.polyline(
+                [[-3.7881406, -38.4676257], [-3.7086442, -38.563186]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var marker_092551327b72cec6337c795c3b84757c = L.marker(
+                [-3.7086442, -38.563186],
+                {
+}
+            ).addTo(feature_group_767866c16514e3252cae24cc494f4b4b);
+        
+    
+            var icon_cd853a3675a974cfb3642bd4f54b224d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6951c6675a5c44279c7c91f78fc6842c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c976bd94a7617282129deb87a1669c9 = $(`<div id="html_6c976bd94a7617282129deb87a1669c9" style="width: 100.0%; height: 100.0%;"><b>Caminhão:</b> RIG8G48<br><b>Cliente:</b> BARATAO - ALVARO WEYNE<br><b>Peso:</b> 59.0<br><b>Turno:</b> MANHA<br><b>Faturamento:</b> R$ 1710.0</div>`)[0];
+                popup_6951c6675a5c44279c7c91f78fc6842c.setContent(html_6c976bd94a7617282129deb87a1669c9);
+            
+        
+
+        marker_092551327b72cec6337c795c3b84757c.bindPopup(popup_6951c6675a5c44279c7c91f78fc6842c)
+        ;
+
+        
+    
+    
+            marker_092551327b72cec6337c795c3b84757c.bindTooltip(
+                `<div>
+                     BARATAO - ALVARO WEYNE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_092551327b72cec6337c795c3b84757c.setIcon(icon_cd853a3675a974cfb3642bd4f54b224d);
+            
+    
+            feature_group_767866c16514e3252cae24cc494f4b4b.addTo(map_31ea89c804506549f384650a7aaa964d);
+        
+    
+            var layer_control_c76af2b65251600e439e9ccd26889f69_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_41ff7581cdb5bc8eb684401ef5dade9c,
+                },
+                overlays :  {
+                    "Caminh\u00e3o: HYQ9905" : feature_group_cf080d14046706a34051666144c31c48,
+                    "Caminh\u00e3o: OCB9225" : feature_group_b52c8b7203e05ca8879e12d04ec5fe03,
+                    "Caminh\u00e3o: OSH4598" : feature_group_de634d11710cb0d40259eb740dfc6411,
+                    "Caminh\u00e3o: PNP4654" : feature_group_be4404032508dc9adab3e7a103d62225,
+                    "Caminh\u00e3o: PNP4814" : feature_group_dc2d0f4ba7be9c4bea7fd1e4b34c5c26,
+                    "Caminh\u00e3o: PNQ3270" : feature_group_99d67074f331a548d83c2c7b3597201e,
+                    "Caminh\u00e3o: POL9211" : feature_group_b1da55eb29f169606a64e57fd441d536,
+                    "Caminh\u00e3o: RIG8G48" : feature_group_767866c16514e3252cae24cc494f4b4b,
+                },
+            };
+            let layer_control_c76af2b65251600e439e9ccd26889f69 = L.control.layers(
+                layer_control_c76af2b65251600e439e9ccd26889f69_layers.base_layers,
+                layer_control_c76af2b65251600e439e9ccd26889f69_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_31ea89c804506549f384650a7aaa964d);
+
+        
+</script>
+</html>
