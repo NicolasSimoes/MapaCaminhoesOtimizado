@@ -147,11 +147,12 @@ for truck, grp in df.groupby('MOTORISTA'):
 
 # Legenda e controle
 folium.LayerControl().add_to(mapa)
+unique_markers = df['NOME FANTASIA'].nunique()
 legend = folium.Element(
     '<div style="position:fixed;bottom:50px;left:50px;width:300px;'
     'background:white;border:2px solid grey;z-index:9999;padding:10px;'
     'box-shadow:2px 2px 5px rgba(0,0,0,0.3)">' +
-    f'<b>Clientes totais:</b> {len(df)}<br><b>Faturamento Total:</b> R$ {faturamento_total:.2f}<br>' +
+    f'<b>Clientes totais:</b>{unique_markers}<br>' +
     f'<b>Turnos:</b> "☀️" = Manhã , 🕒 = Diurno <br>'  +
     f'<b>Atualizado:</b> {pd.Timestamp.today().strftime("%d/%m/%Y")}<br><br>' +
     ''.join([f"<b>{row['MOTORISTA']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>" for _,row in df_group.iterrows()]) +
