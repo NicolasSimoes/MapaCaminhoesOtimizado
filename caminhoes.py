@@ -130,16 +130,17 @@ for truck, grp in df.groupby('CAMINHAO'):
         folium.PolyLine([prev,loc], color=color, weight=2, opacity=0.8).add_to(fg)
         prev = loc
         turno = r.get('TURNO RECEBIMENTO','').strip().upper()
-        emoji = '☀️' if turno=='MANHA' else ('🌤️' if turno=='DIURNO' else '🚚')
+        emoji = '☀️' if turno=='MANHA' else ('🕒' if turno=='DIURNO' else '🚚')
         icon_html = (
             f"<div style='width:34px;height:34px;background:{color};border-radius:50%;"
             f"display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;'>"
             f"<span style='font-weight:bold;'>{idx}</span><span>{emoji}</span></div>"
         )
         icon = folium.DivIcon(html=icon_html)
-        popup = (f"<b>Ordem:</b> {idx}<br><b>Cliente:</b> {r['NOME FANTASIA']}<br>"
-                 f"<b>Turno:</b> {turno}<br><b>Peso:</b> {r['PESO']}<br>"
-                 f"<b>Faturamento:</b> R$ {r['FATURAMENTO']}")
+        popup = ( f"<b>Placa:</b>  {r['CAMINHAO']}<br>"
+                    f"<b>Ordem:</b> {idx}<br><b>Cliente:</b> {r['NOME FANTASIA']}<br>"
+                    f"<b>Turno:</b> {turno}<br><b>Peso:</b> {r['PESO']}<br>"
+                    f"<b>Faturamento:</b> R$ {r['FATURAMENTO']}")
         folium.Marker(loc, popup=popup, tooltip=f"{idx} - {r['NOME FANTASIA']} ({turno})", icon=icon).add_to(fg)
 
     fg.add_to(mapa)
@@ -151,6 +152,7 @@ legend = folium.Element(
     'background:white;border:2px solid grey;z-index:9999;padding:10px;'
     'box-shadow:2px 2px 5px rgba(0,0,0,0.3)">' +
     f'<b>Clientes totais:</b> {len(df)}<br><b>Faturamento Total:</b> R$ {faturamento_total:.2f}<br>' +
+    f'<b>Turnos:</b> "☀️" = Manhã , 🕒 = Diurno <br>'  +
     f'<b>Atualizado:</b> {pd.Timestamp.today().strftime("%d/%m/%Y")}<br><br>' +
     ''.join([f"<b>{row['CAMINHAO']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>" for _,row in df_group.iterrows()]) +
     '</div>'
