@@ -3,172 +3,160 @@ import folium
 import math
 from ortools.constraint_solver import pywrapcp, routing_enums_pb2
 
-# Função para calcular distância haversine entre dois pontos (em km)
+# Função haversine para distância em km
 def haversine_distance(coord1, coord2):
     R = 6371
     lat1, lon1 = math.radians(coord1[0]), math.radians(coord1[1])
     lat2, lon2 = math.radians(coord2[0]), math.radians(coord2[1])
-    dlat = lat2 - lat1
-    dlon = lon2 - lon1
+    dlat, dlon = lat2 - lat1, lon2 - lon1
     a = math.sin(dlat/2)**2 + math.cos(lat1)*math.cos(lat2)*math.sin(dlon/2)**2
     return R * 2 * math.asin(math.sqrt(a))
 
-# Constrói matriz de distâncias para uma lista de coordenadas
+# Cria matriz de distâncias
 def build_distance_matrix(coords):
     return [[haversine_distance(c1, c2) for c2 in coords] for c1 in coords]
 
-# Resolve TSP (Circuito) e retorna ordem de índices visitados, começando em 0
+# Resolve TSP e retorna rota (circuit) como lista de índices
 def solve_tsp(distance_matrix, time_limit=10):
     size = len(distance_matrix)
     manager = pywrapcp.RoutingIndexManager(size, 1, 0)
     routing = pywrapcp.RoutingModel(manager)
 
-    def distance_callback(from_index, to_index):
-        from_node = manager.IndexToNode(from_index)
-        to_node = manager.IndexToNode(to_index)
-        return int(distance_matrix[from_node][to_node] * 1000)
+    def distance_callback(from_idx, to_idx):
+        return int(distance_matrix[manager.IndexToNode(from_idx)][manager.IndexToNode(to_idx)] * 1000)
 
-    transit_index = routing.RegisterTransitCallback(distance_callback)
-    routing.SetArcCostEvaluatorOfAllVehicles(transit_index)
-    routing.AddDimension(transit_index, 0, int(1e9), True, "Distance")
+    transit_idx = routing.RegisterTransitCallback(distance_callback)
+    routing.SetArcCostEvaluatorOfAllVehicles(transit_idx)
+    routing.AddDimension(transit_idx, 0, int(1e9), True, 'Distance')
 
-    search_params = pywrapcp.DefaultRoutingSearchParameters()
-    search_params.first_solution_strategy = routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
-    search_params.local_search_metaheuristic = routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH
-    search_params.time_limit.seconds = time_limit
+    params = pywrapcp.DefaultRoutingSearchParameters()
+    params.first_solution_strategy = routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
+    params.local_search_metaheuristic = routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH
+    params.time_limit.seconds = time_limit
 
-    solution = routing.SolveWithParameters(search_params)
-    if solution:
-        index = routing.Start(0)
+    sol = routing.SolveWithParameters(params)
+    if sol:
+        idx = routing.Start(0)
         route = []
         while True:
-            node = manager.IndexToNode(index)
-            route.append(node)
-            if routing.IsEnd(index):
-                break
-            index = solution.Value(routing.NextVar(index))
+            route.append(manager.IndexToNode(idx))
+            if routing.IsEnd(idx): break
+            idx = sol.Value(routing.NextVar(idx))
         return route
     return list(range(size))
 
-# -- Leitura e preparação dos dados --
+# Carrega e limpa dados
 df = pd.read_csv('dbcaminhoes.csv', sep=';', encoding='utf-8')
 df.columns = df.columns.str.strip()
-for col in df.select_dtypes(include=['object']):
-    df[col] = df[col].str.strip()
+for c in df.select_dtypes('object'):
+    df[c] = df[c].str.strip()
 
 # Conversões numéricas
 df['PESO'] = pd.to_numeric(df['PESO'].str.replace(',', '.'), errors='coerce')
 df['FATURAMENTO'] = (
     df['FATURAMENTO']
-    .str.replace(r'R\$', '', regex=True)
-    .str.replace(r'\.', '', regex=True)
-    .str.replace(',', '.', regex=True)
-    .str.strip()
+      .str.replace(r'R\$', '', regex=True)
+      .str.replace(r'\.', '', regex=True)
+      .str.replace(',', '.', regex=True)
+      .str.strip()
 )
 df['FATURAMENTO'] = pd.to_numeric(df['FATURAMENTO'], errors='coerce')
 
-# Agrupamento para legenda
+# Estatísticas para legenda
 df_group = df.groupby('CAMINHAO').agg(
-    PESO_TOTAL=('PESO', 'sum'),
-    CARGA_UTIL=('CARGA', 'first'),
-    VALOR_TOTAL=('FATURAMENTO', 'sum')
+    PESO_TOTAL=('PESO','sum'),
+    CARGA_UTIL=('CARGA','first'),
+    VALOR_TOTAL=('FATURAMENTO','sum')
 ).reset_index()
 df_group['USO_%'] = df_group['PESO_TOTAL'] / df_group['CARGA_UTIL'] * 100
 faturamento_total = df_group['VALOR_TOTAL'].sum()
 
 # Cores por caminhão
-colors = ['red','blue','green','purple','orange','darkred','darkblue','darkgreen','cadetblue','darkpurple','pink','lightblue','lightgreen','gray','black','lightgray','coral' ]
-truck_colors = {truck: colors[i % len(colors)] for i, truck in enumerate(df['CAMINHAO'].unique())}
+colors = ['red','blue','green','purple','orange','darkred','beige','darkblue','darkgreen','cadetblue','darkpurple','pink','lightblue','lightgreen','gray','black','lightgray']
+truck_colors = {t: colors[i%len(colors)] for i,t in enumerate(df['CAMINHAO'].unique())}
 
 # Mapa base
-mapa = folium.Map(location=[-3.8666699, -38.5773332], zoom_start=10)
+mapa = folium.Map(location=[df['LATITUDE CASA'].mean(), df['LONGITUDE CASA'].mean()], zoom_start=10)
 
-# Plot por caminhão: otimização + marcador com número e ícone de turno e priorização manhã
-for truck, group in df.groupby('CAMINHAO'):
-    rows = group.to_dict('records')
+# Loop por caminhão
+for truck, grp in df.groupby('CAMINHAO'):
+    rows = grp.to_dict('records')
     depot = (rows[0]['LATITUDE CASA'], rows[0]['LONGITUDE CASA'])
-    points = [(r['LATITUDE'], r['LONGITUDE']) for r in rows]
 
-    # Solução TSP
-    coords = [depot] + points
-    dist_matrix = build_distance_matrix(coords)
-    route_idx = solve_tsp(dist_matrix)
-    if route_idx and route_idx[-1] == 0:
-        route_idx = route_idx[:-1]
+    # Separa manhã e diurno
+    manha = [r for r in rows if r.get('TURNO RECEBIMENTO','').strip().upper()=='MANHA']
+    diurno = [r for r in rows if r not in manha]
 
-    # Ordem inicial pelo TSP
-    ordered = [rows[i-1] for i in route_idx if i != 0]
-    # Prioriza lojas com turno MANHA
-    manha = [r for r in ordered if r.get('TURNO RECEBIMENTO','').strip().upper() == 'MANHA']
-    diurno = [r for r in ordered if r.get('TURNO RECEBIMENTO','').strip().upper() != 'MANHA']
-    ordered = manha + diurno
+    # TSP para manhã
+    ordered_manha = []
+    last_loc = depot
+    if manha:
+        coords_m = [depot] + [(r['LATITUDE'],r['LONGITUDE']) for r in manha]
+        dm = build_distance_matrix(coords_m)
+        route1 = solve_tsp(dm)
+        if route1 and route1[-1]==0:
+            route1 = route1[:-1]
+        ordered_manha = [manha[i-1] for i in route1 if i>0]
+        last_loc = coords_m[route1[-1]]
 
-    feature_group = folium.FeatureGroup(name=f"Caminhão: {truck}")
-    truck_color = truck_colors.get(truck, 'gray')
+    # TSP para diurno, mas força primeiro a loja mais próxima de last_loc
+    ordered_diurno = []
+    if diurno:
+        coords_d = [last_loc] + [(r['LATITUDE'],r['LONGITUDE']) for r in diurno]
+        dd = build_distance_matrix(coords_d)
+        route2 = solve_tsp(dd)
+        if route2 and route2[-1]==0:
+            route2 = route2[:-1]
+        # ciclo sem depósito
+        cycle = [i for i in route2 if i>0]
+        # encontra índice na matriz coords_d com menor distância a last_loc
+        distances = [haversine_distance(last_loc, coords_d[i]) for i in cycle]
+        nearest_pos = distances.index(min(distances))
+        rotated = cycle[nearest_pos:] + cycle[:nearest_pos]
+        ordered_diurno = [diurno[i-1] for i in rotated]
 
-    # Depósito
-    folium.Marker(
-        location=depot,
-        popup="VALEMILK-CD",
-        icon=folium.Icon(color=truck_color, icon='home', prefix='fa')
-    ).add_to(feature_group)
+    # Combina manhã e diurno
+    ordered = ordered_manha + ordered_diurno
+
+    # Plotagem
+    fg = folium.FeatureGroup(name=f'Caminhão: {truck}')
+    color = truck_colors[truck]
+    # depósito
+    folium.Marker(depot, popup='VALEMILK-CD', icon=folium.Icon(color=color, icon='home', prefix='fa')).add_to(fg)
 
     prev = depot
     for idx, r in enumerate(ordered, start=1):
-        dest = (r['LATITUDE'], r['LONGITUDE'])
-        folium.PolyLine(locations=[prev, dest], color=truck_color, weight=2, opacity=0.8).add_to(feature_group)
-        prev = dest
-
-        # Seleção de emoji de turno
-        turno = r.get('TURNO RECEBIMENTO', '').strip().upper()
-        if turno == 'MANHA':
-            emoji = '☀️'
-        elif turno == 'DIURNO':
-            emoji = '🌤️'
-        else:
-            emoji = '🚚'
-
-        # DivIcon com número e emoji
-        html = (
-            f"<div style='width:34px; height:34px; background:{truck_color};"
-            f"border-radius:50%; display:flex; align-items:center; justify-content:center;"
-            f"flex-direction:column; color:white; font-size:12px;'>"
-            f"<span style='font-weight:bold;'>{idx}</span>"
-            f"<span>{emoji}</span>"
-            f"</div>"
+        loc = (r['LATITUDE'], r['LONGITUDE'])
+        folium.PolyLine([prev,loc], color=color, weight=2, opacity=0.8).add_to(fg)
+        prev = loc
+        turno = r.get('TURNO RECEBIMENTO','').strip().upper()
+        emoji = '☀️' if turno=='MANHA' else ('🌤️' if turno=='DIURNO' else '🚚')
+        icon_html = (
+            f"<div style='width:34px;height:34px;background:{color};border-radius:50%;"
+            f"display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;'>"
+            f"<span style='font-weight:bold;'>{idx}</span><span>{emoji}</span></div>"
         )
-        icon = folium.DivIcon(html=html)
+        icon = folium.DivIcon(html=icon_html)
+        popup = (f"<b>Ordem:</b> {idx}<br><b>Cliente:</b> {r['NOME FANTASIA']}<br>"
+                 f"<b>Turno:</b> {turno}<br><b>Peso:</b> {r['PESO']}<br>"
+                 f"<b>Faturamento:</b> R$ {r['FATURAMENTO']}")
+        folium.Marker(loc, popup=popup, tooltip=f"{idx} - {r['NOME FANTASIA']} ({turno})", icon=icon).add_to(fg)
 
-        popup = (
-            f"<b>Placa:</b>  {r['CAMINHAO']}<br>"
-            f"<b>Ordem:</b> {idx}<br><b>Cliente:</b> {r['NOME FANTASIA']}<br>"
-            f"<b>Turno:</b> {turno}<br><b>Peso:</b> {r['PESO']}<br>"
-            f"<b>Faturamento:</b> R$ {r['FATURAMENTO']}"
-        )
-        folium.Marker(
-            location=dest,
-            popup=popup,
-            tooltip=f"{idx} - {r['NOME FANTASIA']} ({turno})",
-            icon=icon
-        ).add_to(feature_group)
-
-    feature_group.add_to(mapa)
+    fg.add_to(mapa)
 
 # Legenda e controle
 folium.LayerControl().add_to(mapa)
 legend = folium.Element(
-    f"""
-<div style="position:fixed; bottom:50px; left:50px; width:300px; background:white; border:2px solid grey; z-index:9999; padding:10px; box-shadow:2px 2px 5px rgba(0,0,0,0.3)">
-    <b>🏬 Clientes totais:</b> {len(df)}<br>
-    <b>💰 Faturamento Total:</b> R$ {faturamento_total:.2f}<br>
-    <b>🔄 Atualizado:</b> {pd.Timestamp.today().strftime('%d/%m/%Y')}<br><br>
-""" + "".join([
-        f"<b>{row['CAMINHAO']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>"
-        for _, row in df_group.iterrows()
-    ]) + "</div>"
+    '<div style="position:fixed;bottom:50px;left:50px;width:300px;'
+    'background:white;border:2px solid grey;z-index:9999;padding:10px;'
+    'box-shadow:2px 2px 5px rgba(0,0,0,0.3)">' +
+    f'<b>Clientes totais:</b> {len(df)}<br><b>Faturamento Total:</b> R$ {faturamento_total:.2f}<br>' +
+    f'<b>Atualizado:</b> {pd.Timestamp.today().strftime("%d/%m/%Y")}<br><br>' +
+    ''.join([f"<b>{row['CAMINHAO']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>" for _,row in df_group.iterrows()]) +
+    '</div>'
 )
 mapa.get_root().html.add_child(legend)
 
-# Salvar mapa otimizado com ordem e prioridade de turno
+# Salva mapa final
 mapa.save('rota_otimizada_prioridade_manha.html')
-print("Mapa otimizado com prioridade para turno manhã salvo como rota_otimizada_prioridade_manha.html")
+print('Mapa reprocessado com priorização dinâmica e TSP ajustado.')
