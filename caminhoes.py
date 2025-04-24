@@ -72,7 +72,7 @@ df_group['USO_%'] = df_group['PESO_TOTAL'] / df_group['CARGA_UTIL'] * 100
 faturamento_total = df_group['VALOR_TOTAL'].sum()
 
 # Cores por caminhão
-colors = ['red','blue','green','purple','orange','darkred','beige','darkblue','darkgreen','cadetblue','darkpurple','pink','lightblue','lightgreen','gray','black','lightgray']
+colors = ['red','blue','green','purple','orange','darkred','darkblue','coral','cadetblue','darkpurple','pink','lightblue','lightgreen','gray','black', 'yello']
 truck_colors = {t: colors[i%len(colors)] for i,t in enumerate(df['MOTORISTA'].unique())}
 
 # Mapa base
