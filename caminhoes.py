@@ -16,7 +16,7 @@ def haversine_distance(coord1, coord2):
 def build_distance_matrix(coords):
     return [[haversine_distance(c1, c2) for c2 in coords] for c1 in coords]
 
-# Resolve TSP e retorna rota (circuit) como lista de índices
+
 def solve_tsp(distance_matrix, time_limit=10):
     size = len(distance_matrix)
     manager = pywrapcp.RoutingIndexManager(size, 1, 0)
