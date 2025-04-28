@@ -152,11 +152,20 @@ legend = folium.Element(
     '<div style="position:fixed;bottom:50px;left:50px;width:300px;'
     'background:white;border:2px solid grey;z-index:9999;padding:10px;'
     'box-shadow:2px 2px 5px rgba(0,0,0,0.3)">' +
-    f'<b>Clientes totais:</b>{unique_markers}<br>' +
-    f'<b>Turnos:</b> "☀️" = Manhã , 🕒 = Diurno <br>'  +
+    f'<b>Clientes totais:</b> {unique_markers}<br>' +
+    f'<b>Faturamento total:</b> R$ {faturamento_total:.2f}<br>' +
+    f'<b>Turnos:</b> ☀️ = Manhã , 🕒 = Diurno<br>' +
     f'<b>Atualizado:</b> {pd.Timestamp.today().strftime("%d/%m/%Y")}<br><br>' +
-    ''.join([f"<b>{row['MOTORISTA']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%<br>" for _,row in df_group.iterrows()]) +
+    ''.join([
+        f"<div style='display:flex;align-items:center;margin-bottom:5px;'>"
+        f"<div style='width:15px;height:15px;background:{truck_colors.get(row['MOTORISTA'], 'gray')};"
+        f"border-radius:50%;margin-right:8px;'></div>"
+        f"<b>{row['MOTORISTA']}</b>: R$ {row['VALOR_TOTAL']:.2f} / Uso: {row['USO_%']:.0f}%"
+        f"</div>"
+        for _, row in df_group.iterrows()
+    ]) +
     '</div>'
+    
 )
 mapa.get_root().html.add_child(legend)
 
