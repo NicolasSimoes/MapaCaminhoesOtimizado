@@ -130,7 +130,7 @@ for truck, grp in df.groupby('MOTORISTA'):
         folium.PolyLine([prev,loc], color=color, weight=2, opacity=0.8).add_to(fg)
         prev = loc
         turno = r.get('TURNO RECEBIMENTO','').strip().upper()
-        emoji = '☀️' if turno=='MANHA' else ('🕒' if turno=='DIURNO' else '🚚')
+        emoji = '☀️' if turno=='MANHA' else ('🕒' if turno=='DIURNO' else '⚡' if turno=='DIURNO ALERTA' else'🚚')
         icon_html = (
             f"<div style='width:34px;height:34px;background:{color};border-radius:50%;"
             f"display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;'>"
@@ -154,7 +154,7 @@ legend = folium.Element(
     'box-shadow:2px 2px 5px rgba(0,0,0,0.3)">' +
     f'<b>Clientes totais:</b> {unique_markers}<br>' +
     f'<b>Faturamento total:</b> R$ {faturamento_total:.2f}<br>' +
-    f'<b>Turnos:</b> ☀️ = Manhã , 🕒 = Diurno<br>' +
+    f'<b>Turnos:</b> ☀️ = Manhã , 🕒 = Diurno, ⚡ = Recebe até as 16h<br>' +
     f'<b>Atualizado:</b> {pd.Timestamp.today().strftime("%d/%m/%Y")}<br><br>' +
     ''.join([
         f"<div style='display:flex;align-items:center;margin-bottom:5px;'>"
