@@ -155,7 +155,7 @@ legend = folium.Element(
     f'<b>Clientes totais:</b> {unique_markers}<br>' +
     f'<b>Faturamento total:</b> R$ {faturamento_total:.2f}<br>' +
     f'<b>Turnos:</b> ☀️ = Manhã , 🕒 = Diurno, ⚡ = Recebe até as 16h<br>' +
-    f'<b>Atualizado:</b> Saida:16/05/2025 <br><br>' +
+    f'<b>Atualizado:</b> Saida:17/05/2025 <br><br>' +
     ''.join([
         f"<div style='display:flex;align-items:center;margin-bottom:5px;'>"
         f"<div style='width:15px;height:15px;background:{truck_colors.get(row['MOTORISTA'], 'gray')};"
