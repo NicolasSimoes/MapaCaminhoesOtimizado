@@ -46,7 +46,7 @@ def solve_tsp(distance_matrix, time_limit=10):
     return list(range(size))
 
 # Carrega e limpa dados
-df = pd.read_csv('dbcaminhoes.csv', sep=';', encoding='utf-8')
+df = pd.read_csv('dbcaminhoesTESTE.csv', sep=';', encoding='utf-8')
 df.columns = df.columns.str.strip()
 for c in df.select_dtypes('object'):
     df[c] = df[c].str.strip()
