@@ -51,7 +51,7 @@ df.columns = df.columns.str.strip()
 for c in df.select_dtypes('object'):
     df[c] = df[c].str.strip()
 
-# Conversões numéricas
+
 df['PESO'] = pd.to_numeric(df['PESO'].str.replace(',', '.'), errors='coerce')
 df['FATURAMENTO'] = (
     df['FATURAMENTO']
@@ -62,7 +62,7 @@ df['FATURAMENTO'] = (
 )
 df['FATURAMENTO'] = pd.to_numeric(df['FATURAMENTO'], errors='coerce')
 
-# Estatísticas para legenda
+
 df_group = df.groupby('MOTORISTA').agg(
     PESO_TOTAL=('PESO','sum'),
     CARGA_UTIL=('CARGA','first'),
@@ -71,23 +71,23 @@ df_group = df.groupby('MOTORISTA').agg(
 df_group['USO_%'] = df_group['PESO_TOTAL'] / df_group['CARGA_UTIL'] * 100
 faturamento_total = df_group['VALOR_TOTAL'].sum()
 
-# Cores por caminhão
+
 colors = ['red','blue','green','purple','orange','darkred','darkblue','coral','cadetblue','darkpurple','pink','lightblue','lightgreen','gray','black', 'yello']
 truck_colors = {t: colors[i%len(colors)] for i,t in enumerate(df['MOTORISTA'].unique())}
 
-# Mapa base
+
 mapa = folium.Map(location=[df['LATITUDE CASA'].mean(), df['LONGITUDE CASA'].mean()], zoom_start=10)
 
-# Loop por caminhão
+
 for truck, grp in df.groupby('MOTORISTA'):
     rows = grp.to_dict('records')
     depot = (rows[0]['LATITUDE CASA'], rows[0]['LONGITUDE CASA'])
 
-    # Separa manhã e diurno
+    
     manha = [r for r in rows if r.get('TURNO RECEBIMENTO','').strip().upper()=='MANHA']
     diurno = [r for r in rows if r not in manha]
 
-    # TSP para manhã
+    
     ordered_manha = []
     last_loc = depot
     if manha:
@@ -99,7 +99,7 @@ for truck, grp in df.groupby('MOTORISTA'):
         ordered_manha = [manha[i-1] for i in route1 if i>0]
         last_loc = coords_m[route1[-1]]
 
-    # TSP para diurno, mas força primeiro a loja mais próxima de last_loc
+    
     ordered_diurno = []
     if diurno:
         coords_d = [last_loc] + [(r['LATITUDE'],r['LONGITUDE']) for r in diurno]
@@ -107,21 +107,21 @@ for truck, grp in df.groupby('MOTORISTA'):
         route2 = solve_tsp(dd)
         if route2 and route2[-1]==0:
             route2 = route2[:-1]
-        # ciclo sem depósito
+      
         cycle = [i for i in route2 if i>0]
-        # encontra índice na matriz coords_d com menor distância a last_loc
+        
         distances = [haversine_distance(last_loc, coords_d[i]) for i in cycle]
         nearest_pos = distances.index(min(distances))
         rotated = cycle[nearest_pos:] + cycle[:nearest_pos]
         ordered_diurno = [diurno[i-1] for i in rotated]
 
-    # Combina manhã e diurno
+    
     ordered = ordered_manha + ordered_diurno
 
-    # Plotagem
+ 
     fg = folium.FeatureGroup(name=f'Caminhão: {truck}')
     color = truck_colors[truck]
-    # depósito
+ 
     folium.Marker(depot, popup='VALEMILK-CD', icon=folium.Icon(color=color, icon='home', prefix='fa')).add_to(fg)
 
     prev = depot
@@ -155,7 +155,7 @@ legend = folium.Element(
     f'<b>Clientes totais:</b> {unique_markers}<br>' +
     f'<b>Faturamento total:</b> R$ {faturamento_total:.2f}<br>' +
     f'<b>Turnos:</b> ☀️ = Manhã , 🕒 = Diurno, ⚡ = Recebe até as 16h<br>' +
-    f'<b>Atualizado:</b> Saida:14/06/2025 <br><br>' +
+    f'<b>Atualizado:</b> Saida:17/06/2025 <br><br>' +
     ''.join([
         f"<div style='display:flex;align-items:center;margin-bottom:5px;'>"
         f"<div style='width:15px;height:15px;background:{truck_colors.get(row['MOTORISTA'], 'gray')};"
